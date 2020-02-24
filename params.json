@@ -107,6 +107,8 @@
   },
   "name": "West Nile Virus (Discovery)",
   "projectStatus": "Sandbox",
+  "imgPattern": 7,
+  "showInitials": false,
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -160,6 +162,13 @@
     "displayedState": {
       "checks": []
     }
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1582552692010
   },
   "creationTag": {
     "versionNumber": 0,

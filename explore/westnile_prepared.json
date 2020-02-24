@@ -72,7 +72,7 @@
       "def": {
         "type": "stacked_columns",
         "variant": "normal",
-        "name": "Avg. of NumMosquitos by Species and WnvPresent",
+        "name": "Sum of NumMosquitos by Species and WnvPresent",
         "userEditedName": false,
         "genericDimension0": [
           {
@@ -95,19 +95,19 @@
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of NumMosquitos, descending"
+                "label": "Sum of NumMosquitos, descending"
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of NumMosquitos, ascending",
+                "label": "Sum of NumMosquitos, ascending",
                 "sortAscending": true
               }
             ],
             "sort": {
               "type": "AGGREGATION",
               "measureIdx": 0,
-              "label": "Average of NumMosquitos, descending"
+              "label": "Sum of NumMosquitos, descending"
             }
           }
         ],
@@ -135,12 +135,12 @@
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of NumMosquitos, descending"
+                "label": "Sum of NumMosquitos, descending"
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of NumMosquitos, ascending",
+                "label": "Sum of NumMosquitos, ascending",
                 "sortAscending": true
               }
             ],
@@ -156,7 +156,7 @@
         "genericMeasures": [
           {
             "column": "NumMosquitos",
-            "function": "AVG",
+            "function": "SUM",
             "type": "NUMERICAL",
             "displayed": true,
             "isA": "measure",
@@ -236,6 +236,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
@@ -253,7 +254,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABIElEQVRoQ+1YPQ6CMBQuJqQcQC/jpBPxFgwyunkFN2+A9zBMbF5GnN3AgK0x9ckzmtqSfoy8tOX7ed8jjURgT0ThbassaWV8NGuTebEcOz8A3CnIKdyc8opSegwO+EphAFZyQ2EPEw6WRmg92VL3KEILoeVhWqlPQmghtBBaQiCljZSmCPHlt9NKaAGwEAIKOxrVsHQ/h7NFconly53WtCj7Oy0upcfXwwzgOk/JK54hQvzuYQC+J4xWEAqrxA3W0pQDNBmOptHjWHos/djDHGCubpMUAP5kDnOhxSnI1YNTmCOEqw8RRlt6s5L1tdmZC2eHctu9O6/TPbXpUF3X3q3/V50EbNNSrvcGYNcK2D4fCttm2PX+UNi1ArbPD07hG5GheTh/SRYwAAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAA1klEQVRoQ+2XMQ7CMAxFHUZmTsPGQk+SU/UcHZjY4DJwhYalWVpFQRWWY/K6Rorz/Z9/0iCdfaGkNz3jlJIc1+uH83jx3CMEZ/e6c/gdr1OSsEH6NN7+E2kEL6zjsLPILqY0SIO0M5aX4+5Gen7Eu8dXGIKza7XQ6s7hVxw2SHu4o3cjjWARweEGby6Q/jalmeHeZ7hVAtRmGMGNII/Dv0ppkAZpm2cYM8wMr8jLf0S1UKqt2wAtUkTa6kDadRGs3WHr/XHY2gHt+jis3WHr/XHY2gHt+h8lVxE4103l+AAAAABJRU5ErkJggg\u003d\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"

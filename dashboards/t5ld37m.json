@@ -9,8 +9,8 @@
             "box": {
               "top": 0,
               "left": 0,
-              "width": 5,
-              "height": 3
+              "width": 7,
+              "height": 4
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
@@ -31,7 +31,7 @@
             "tileType": "INSIGHT",
             "box": {
               "top": 0,
-              "left": 5,
+              "left": 7,
               "width": 5,
               "height": 4
             },
@@ -53,9 +53,9 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 3,
+              "top": 4,
               "left": 0,
-              "width": 5,
+              "width": 7,
               "height": 4
             },
             "clickAction": "OPEN_INSIGHT",
@@ -83,11 +83,11 @@
   "name": "West Nile Virus (Discovery)\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1582587844507
+    "lastModifiedOn": 1582587856677
   },
   "creationTag": {
     "versionNumber": 0,

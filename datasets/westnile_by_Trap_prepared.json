@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1582584753136
+    "lastModifiedOn": 1582586538280
   },
   "creationTag": {
     "versionNumber": 0,
@@ -127,10 +127,6 @@
         "type": "string"
       },
       {
-        "name": "Station_max",
-        "type": "bigint"
-      },
-      {
         "name": "Tmax_max",
         "type": "bigint"
       },
@@ -171,19 +167,11 @@
         "type": "bigint"
       },
       {
+        "name": "daylight",
+        "type": "double"
+      },
+      {
         "name": "CodeSum_max",
-        "type": "string"
-      },
-      {
-        "name": "Depth_max",
-        "type": "bigint"
-      },
-      {
-        "name": "Water1_max",
-        "type": "string"
-      },
-      {
-        "name": "SnowFall_max",
         "type": "string"
       },
       {

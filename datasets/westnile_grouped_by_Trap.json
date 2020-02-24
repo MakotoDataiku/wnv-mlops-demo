@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1582584195420
+    "lastModifiedOn": 1582584387521
   },
   "creationTag": {
     "versionNumber": 0,
@@ -88,6 +88,154 @@
     "columns": [
       {
         "name": "Trap",
+        "type": "string"
+      },
+      {
+        "name": "Date_max",
+        "type": "string"
+      },
+      {
+        "name": "Date_parsed_max",
+        "type": "date"
+      },
+      {
+        "name": "Day_Number_max",
+        "type": "bigint"
+      },
+      {
+        "name": "Date_parsed_year_max",
+        "type": "bigint"
+      },
+      {
+        "name": "Date_parsed_month_max",
+        "type": "bigint"
+      },
+      {
+        "name": "Date_parsed_day_max",
+        "type": "bigint"
+      },
+      {
+        "name": "Address_max",
+        "type": "string"
+      },
+      {
+        "name": "Block_max",
+        "type": "bigint"
+      },
+      {
+        "name": "Street_max",
+        "type": "string"
+      },
+      {
+        "name": "AddressNumberAndStreet_max",
+        "type": "string"
+      },
+      {
+        "name": "Latitude_max",
+        "type": "double"
+      },
+      {
+        "name": "Longitude_max",
+        "type": "double"
+      },
+      {
+        "name": "AddressAccuracy_max",
+        "type": "bigint"
+      },
+      {
+        "name": "NumMosquitos_sum",
+        "type": "bigint"
+      },
+      {
+        "name": "WnvPresent_max",
+        "type": "bigint"
+      },
+      {
+        "name": "GeoPoint_max",
+        "type": "string"
+      },
+      {
+        "name": "Station_max",
+        "type": "string"
+      },
+      {
+        "name": "Tmax_max",
+        "type": "string"
+      },
+      {
+        "name": "Tmin_max",
+        "type": "string"
+      },
+      {
+        "name": "Tavg_max",
+        "type": "string"
+      },
+      {
+        "name": "Depart_max",
+        "type": "string"
+      },
+      {
+        "name": "DewPoint_max",
+        "type": "string"
+      },
+      {
+        "name": "WetBulb_max",
+        "type": "string"
+      },
+      {
+        "name": "Heat_max",
+        "type": "string"
+      },
+      {
+        "name": "Cool_max",
+        "type": "string"
+      },
+      {
+        "name": "Sunrise_max",
+        "type": "string"
+      },
+      {
+        "name": "Sunset_max",
+        "type": "string"
+      },
+      {
+        "name": "CodeSum_max",
+        "type": "string"
+      },
+      {
+        "name": "Depth_max",
+        "type": "string"
+      },
+      {
+        "name": "Water1_max",
+        "type": "string"
+      },
+      {
+        "name": "SnowFall_max",
+        "type": "string"
+      },
+      {
+        "name": "PrecipTotal_max",
+        "type": "string"
+      },
+      {
+        "name": "StnPressure_max",
+        "type": "string"
+      },
+      {
+        "name": "SeaLevel_max",
+        "type": "string"
+      },
+      {
+        "name": "ResultSpeed_max",
+        "type": "string"
+      },
+      {
+        "name": "ResultDir_max",
+        "type": "string"
+      },
+      {
+        "name": "AvgSpeed_max",
         "type": "string"
       },
       {

@@ -72,8 +72,8 @@
       "def": {
         "type": "multi_columns_lines",
         "variant": "normal",
-        "name": "Avg. of NumMosquitos_sum by Date_parsed_max",
-        "userEditedName": false,
+        "name": "Evolution of NumMosquitos(avg) by month in each year",
+        "userEditedName": true,
         "genericDimension0": [
           {
             "column": "Date_parsed_max",
@@ -290,6 +290,122 @@
           "gridLatDeg": 0.5
         },
         "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABwElEQVRoQ2NkGGGAcTD594mUzGaYe2SePfGlhdtGPUyLUCXWzNEYJjakSFA3mqRJCCyqKwUl6ed8YhySn179GDGFVq1Pmck/RibGhTNzJKgeogwMDKNJmhahSqyZo6U0sSFFgrpBm6RDkucwnGj2oHpra1B5eIFj1GmXm4degCIsKGlu/6kW930kRB5RSgeVh+PTp7xo3dxxGuTyEVEtzXJLOOt1Zc+zEePhEV9KW9TuWHui2SOYqMxJpKJBlYfRY9iidsdmapfUg9rDREYaScpGPUxScFGoGDkJgxoaa+amwE0cltXSiPYwKEbRC60nUrLzq33LPanZGBnQPIzpQdRRS5CHt2o563lfo15jZNB7mIHhvwg1h25HPUxhwUuSdmKSNCiGq30rTEH5GFs+J8nCgR7igXl4o66HTPbOOYbYCi1Ykp7kkKLVtaxBmdL29qBI0qAYBA3a4fMwrAc1LDz8l5GZUf7pQ58R42FcsQeqltBL6SEVw0+l5FxghYz0s0d7iC20kKulQe1hwh6S2fyThY2J/c+vf7haWkM6hkmtQmihfkBLaVp4iJCZox4mFEJDXX40hod6DBJy/4iLYQCclz04YoAtYwAAAABJRU5ErkJggg\u003d\u003d",
+        "disableSafetyLimits": false,
+        "useLiveProcessingIfAvailable": true,
+        "legendPlacement": "OUTER_RIGHT"
+      },
+      "maxDataBytes": 157286400
+    },
+    {
+      "copySelectionFromScript": false,
+      "engineType": "LINO",
+      "refreshableSelection": {
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": 10000,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        },
+        "autoRefreshSample": false,
+        "_refreshTrigger": 1
+      },
+      "def": {
+        "type": "grouped_columns",
+        "variant": "normal",
+        "name": "New chart",
+        "userEditedName": false,
+        "genericDimension0": [],
+        "genericDimension1": [],
+        "facetDimension": [],
+        "animationDimension": [],
+        "genericMeasures": [],
+        "xDimension": [],
+        "yDimension": [],
+        "uaXDimension": [],
+        "uaYDimension": [],
+        "uaSize": [],
+        "uaShape": [],
+        "uaColor": [],
+        "uaTooltip": [],
+        "groupDimension": [],
+        "xMeasure": [],
+        "yMeasure": [],
+        "colorMeasure": [],
+        "sizeMeasure": [],
+        "geometry": [],
+        "tooltipMeasures": [],
+        "boxplotBreakdownDim": [],
+        "boxplotValue": [],
+        "axis1LogScale": false,
+        "axis2LogScale": false,
+        "includeZero": true,
+        "smoothing": true,
+        "showLegend": true,
+        "showXAxis": false,
+        "showInChartValues": false,
+        "showInChartLabels": true,
+        "strokeWidth": 1,
+        "fillOpacity": 0.6,
+        "showXAxisLabel": true,
+        "showYAxisLabel": true,
+        "hexbinRadius": 20,
+        "hexbinNumber": 20,
+        "hexbinRadiusMode": "NUM_HEXAGONS",
+        "chartHeight": 200,
+        "singleXAxis": true,
+        "multiTooltips": false,
+        "animationFrameDuration": 3000,
+        "animationRepeat": true,
+        "colorOptions": {
+          "singleColor": "#2678B1",
+          "transparency": 0.75,
+          "colorPalette": "default",
+          "ccScaleMode": "NORMAL",
+          "customPalette": {
+            "id": "__dku_custom__",
+            "name": "Custom Palette",
+            "colors": [],
+            "values": [],
+            "fixedValues": false
+          },
+          "paletteType": "CONTINUOUS",
+          "quantizationMode": "NONE",
+          "numQuantizeSteps": 5,
+          "paletteMiddleValue": 0.0
+        },
+        "bubblesOptions": {
+          "defaultRadius": 5.0,
+          "singleShape": "FILLED_CIRCLE"
+        },
+        "xAxisMode": "NORMAL",
+        "yAxisMode": "NORMAL",
+        "pieOptions": {
+          "donutHoleSize": 54.0
+        },
+        "scatterOptions": {
+          "equalScales": false,
+          "identityLine": false
+        },
+        "mapOptions": {
+          "tilesLayer": "cartodb-positron",
+          "lockSquareGrid": false
+        },
+        "mapGridOptions": {
+          "gridLonDeg": 0.6,
+          "gridLatDeg": 0.6
+        },
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"

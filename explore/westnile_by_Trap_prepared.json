@@ -322,10 +322,10 @@
         "_refreshTrigger": 1
       },
       "def": {
-        "type": "grouped_columns",
+        "type": "grid_map",
         "variant": "normal",
-        "name": "New chart",
-        "userEditedName": false,
+        "name": "WNV Regions",
+        "userEditedName": true,
         "genericDimension0": [],
         "genericDimension1": [],
         "facetDimension": [],
@@ -342,12 +342,43 @@
         "groupDimension": [],
         "xMeasure": [],
         "yMeasure": [],
-        "colorMeasure": [],
+        "colorMeasure": [
+          {
+            "column": "WnvPresent_max",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeModeDim": 0
+          }
+        ],
         "sizeMeasure": [],
-        "geometry": [],
+        "geometry": [
+          {
+            "column": "GeoPoint_max",
+            "type": "GEOPOINT",
+            "treatAsAlphanum": false,
+            "isA": "ua",
+            "adminLevel": 0
+          }
+        ],
         "tooltipMeasures": [],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
+        "filters": [
+          {
+            "filterType": "ALPHANUM_FACET",
+            "column": "WnvPresent_max",
+            "columnType": "NUMERICAL",
+            "isA": "filter",
+            "excludedValues": {
+              "NaN": true
+            },
+            "explicitExclude": false
+          }
+        ],
         "axis1LogScale": false,
         "axis2LogScale": false,
         "includeZero": true,
@@ -380,10 +411,10 @@
             "values": [],
             "fixedValues": false
           },
-          "paletteType": "CONTINUOUS",
+          "paletteType": "DIVERGING",
           "quantizationMode": "NONE",
           "numQuantizeSteps": 5,
-          "paletteMiddleValue": 0.0
+          "paletteMiddleValue": 0.2
         },
         "bubblesOptions": {
           "defaultRadius": 5.0,
@@ -403,8 +434,8 @@
           "lockSquareGrid": false
         },
         "mapGridOptions": {
-          "gridLonDeg": 0.6,
-          "gridLatDeg": 0.6
+          "gridLonDeg": 0.041,
+          "gridLatDeg": 0.044
         },
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,

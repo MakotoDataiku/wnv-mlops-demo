@@ -14,7 +14,38 @@
     ]
   },
   "exposedObjects": {
-    "objects": []
+    "objects": [
+      {
+        "type": "DATASET",
+        "localName": "weather",
+        "rules": [
+          {
+            "targetProject": "WV_TMP_MAKOTO",
+            "appearOnFlow": true
+          }
+        ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "westnile_until_2009",
+        "rules": [
+          {
+            "targetProject": "WV_TMP_MAKOTO",
+            "appearOnFlow": true
+          }
+        ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "westnile_data_after_2010",
+        "rules": [
+          {
+            "targetProject": "WV_TMP_MAKOTO",
+            "appearOnFlow": true
+          }
+        ]
+      }
+    ]
   },
   "projectType": "REGULAR",
   "owner": "admin",
@@ -174,11 +205,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1582558929459
+    "lastModifiedOn": 1582563990163
   },
   "creationTag": {
     "versionNumber": 0,

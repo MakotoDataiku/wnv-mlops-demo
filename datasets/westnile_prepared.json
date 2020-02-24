@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1582553934759
+    "lastModifiedOn": 1582557931157
   },
   "creationTag": {
     "versionNumber": 0,
@@ -89,6 +89,26 @@
       {
         "name": "Date",
         "type": "string"
+      },
+      {
+        "name": "Date_parsed",
+        "type": "date"
+      },
+      {
+        "name": "Day_Number",
+        "type": "bigint"
+      },
+      {
+        "name": "Date_parsed_year",
+        "type": "bigint"
+      },
+      {
+        "name": "Date_parsed_month",
+        "type": "bigint"
+      },
+      {
+        "name": "Date_parsed_day",
+        "type": "bigint"
       },
       {
         "name": "Address",
@@ -133,6 +153,10 @@
       {
         "name": "WnvPresent",
         "type": "bigint"
+      },
+      {
+        "name": "GeoPoint",
+        "type": "string"
       }
     ],
     "userModified": true

@@ -1,6 +1,6 @@
 {
   "uiData": {
-    "mode": "\u0026\u0026",
+    "mode": "SQL",
     "conditions": [
       {
         "input": "Station",
@@ -11,8 +11,9 @@
       }
     ]
   },
+  "expression": "\"Station\" \u003d \u00271\u0027",
   "$status": {
-    "validated": true,
+    "validated": false,
     "fullyTranslated": false,
     "ok": false,
     "message": "Filter expression is invalid"

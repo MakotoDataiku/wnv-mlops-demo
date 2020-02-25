@@ -210,7 +210,6 @@
         "gridLonDeg": 0.5,
         "gridLatDeg": 0.5
       },
-      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABIElEQVRoQ+1YPQ6CMBQuJqQcQC/jpBPxFgwyunkFN2+A9zBMbF5GnN3AgK0x9ckzmtqSfoy8tOX7ed8jjURgT0ThbassaWV8NGuTebEcOz8A3CnIKdyc8opSegwO+EphAFZyQ2EPEw6WRmg92VL3KEILoeVhWqlPQmghtBBaQiCljZSmCPHlt9NKaAGwEAIKOxrVsHQ/h7NFconly53WtCj7Oy0upcfXwwzgOk/JK54hQvzuYQC+J4xWEAqrxA3W0pQDNBmOptHjWHos/djDHGCubpMUAP5kDnOhxSnI1YNTmCOEqw8RRlt6s5L1tdmZC2eHctu9O6/TPbXpUF3X3q3/V50EbNNSrvcGYNcK2D4fCttm2PX+UNi1ArbPD07hG5GheTh/SRYwAAAAAElFTkSuQmCC",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true,
       "legendPlacement": "OUTER_RIGHT"
@@ -222,11 +221,11 @@
   "name": "Avg. of NumMosquitos by Species and WnvPresent on westnile_prepared",
   "dashboardCreationId": "t5ld37m",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1582558929508
+    "lastModifiedOn": 1582636548605
   },
   "creationTag": {
     "versionNumber": 0,

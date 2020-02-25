@@ -72,14 +72,23 @@
             "insightType": "chart",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
-          },
+          }
+        ]
+      },
+      "title": "Analysis of West Nile Virus epidemic",
+      "showTitle": true
+    },
+    {
+      "id": "foJH9XU",
+      "grid": {
+        "tiles": [
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 4,
-              "left": 7,
-              "width": 5,
-              "height": 4
+              "top": 0,
+              "left": 0,
+              "width": 2,
+              "height": 2
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
@@ -91,34 +100,14 @@
             },
             "autoLoad": true,
             "showTitle": "YES",
-            "insightId": "i2YgAJ7",
+            "insightId": "hOw67bo",
             "insightType": "chart",
-            "displayMode": "INSIGHT",
-            "resizeImageMode": "FIT_SIZE"
-          },
-          {
-            "tileType": "INSIGHT",
-            "box": {
-              "top": 8,
-              "left": 0,
-              "width": 8,
-              "height": 4
-            },
-            "clickAction": "DO_NOTHING",
-            "tileParams": {
-              "displayMode": "summary"
-            },
-            "autoLoad": true,
-            "showTitle": "YES",
-            "insightId": "iGlY05p",
-            "insightType": "saved-model_report",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
           }
         ]
       },
-      "title": "Analysis of West Nile Virus epidemic",
-      "showTitle": true
+      "showTitle": false
     }
   ],
   "owner": "admin",
@@ -126,11 +115,11 @@
   "name": "West Nile Virus (Discovery)\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1582636725465
+    "lastModifiedOn": 1582636753421
   },
   "creationTag": {
     "versionNumber": 0,

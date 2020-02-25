@@ -3,32 +3,34 @@
   "centileSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
-  "defaultOutputIndex": 1,
   "preFilter": {
     "distinct": false,
     "enabled": false
   },
+  "defaultOutputIndex": 1,
   "seed": 1337,
   "randomColumns": [],
   "centileOrders": [],
   "rangeSetTime": false,
+  "column": "WnvPresent_max",
   "randomSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
   "randomColumnsSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
   "computedColumns": [],
   "writeComputedColumnsInOutput": false,
+  "mode": "FILTERS",
   "centileTDigest": false,
   "valueSplits": [
     {
@@ -88,7 +90,168 @@
       "filter": {
         "uiData": {
           "mode": "\u0026\u0026",
-          "conditions": []
+          "conditions": [
+            {
+              "input": "WnvPresent_max",
+              "col": "Date",
+              "num": 0,
+              "operator": "not empty string"
+            }
+          ]
+        },
+        "$status": {
+          "schema": {
+            "columns": [
+              {
+                "name": "Trap",
+                "type": "string"
+              },
+              {
+                "name": "Date",
+                "type": "string"
+              },
+              {
+                "name": "Date_parsed_max",
+                "type": "date"
+              },
+              {
+                "name": "Day_Number_max",
+                "type": "bigint"
+              },
+              {
+                "name": "Date_parsed_year_max",
+                "type": "bigint"
+              },
+              {
+                "name": "Date_parsed_month_max",
+                "type": "bigint"
+              },
+              {
+                "name": "Date_parsed_day_max",
+                "type": "bigint"
+              },
+              {
+                "name": "Address_max",
+                "type": "string"
+              },
+              {
+                "name": "Block_max",
+                "type": "bigint"
+              },
+              {
+                "name": "Street_max",
+                "type": "string"
+              },
+              {
+                "name": "AddressNumberAndStreet_max",
+                "type": "string"
+              },
+              {
+                "name": "Latitude_max",
+                "type": "double"
+              },
+              {
+                "name": "Longitude_max",
+                "type": "double"
+              },
+              {
+                "name": "AddressAccuracy_max",
+                "type": "bigint"
+              },
+              {
+                "name": "NumMosquitos_sum",
+                "type": "bigint"
+              },
+              {
+                "name": "WnvPresent_max",
+                "type": "bigint"
+              },
+              {
+                "name": "GeoPoint_max",
+                "type": "string"
+              },
+              {
+                "name": "Tmax_max",
+                "type": "bigint"
+              },
+              {
+                "name": "Tmin_max",
+                "type": "bigint"
+              },
+              {
+                "name": "Tavg_max",
+                "type": "bigint"
+              },
+              {
+                "name": "Depart_max",
+                "type": "bigint"
+              },
+              {
+                "name": "DewPoint_max",
+                "type": "bigint"
+              },
+              {
+                "name": "WetBulb_max",
+                "type": "string"
+              },
+              {
+                "name": "Heat_max",
+                "type": "bigint"
+              },
+              {
+                "name": "Cool_max",
+                "type": "bigint"
+              },
+              {
+                "name": "Sunrise_max",
+                "type": "string"
+              },
+              {
+                "name": "Sunset_max",
+                "type": "bigint"
+              },
+              {
+                "name": "daylight",
+                "type": "double"
+              },
+              {
+                "name": "CodeSum_max",
+                "type": "string"
+              },
+              {
+                "name": "PrecipTotal_max",
+                "type": "string"
+              },
+              {
+                "name": "StnPressure_max",
+                "type": "string"
+              },
+              {
+                "name": "SeaLevel_max",
+                "type": "double"
+              },
+              {
+                "name": "ResultSpeed_max",
+                "type": "double"
+              },
+              {
+                "name": "ResultDir_max",
+                "type": "bigint"
+              },
+              {
+                "name": "AvgSpeed_max",
+                "type": "double"
+              },
+              {
+                "name": "count",
+                "type": "bigint"
+              }
+            ]
+          },
+          "validated": true,
+          "fullyTranslated": false,
+          "ok": false,
+          "message": "Filter expression is invalid"
         },
         "distinct": false,
         "enabled": true

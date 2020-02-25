@@ -1,0 +1,299 @@
+{
+  "type": "PostgreSQL",
+  "managed": true,
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1582636284498
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1582636284498
+  },
+  "tags": [],
+  "params": {
+    "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
+    "connection": "PostgreSQL",
+    "notReadyIfEmpty": false,
+    "mode": "table",
+    "partitioningType": "custom",
+    "normalizeDoubles": true,
+    "table": "${projectKey}_unlabelled_scored",
+    "tableCreationMode": "auto",
+    "writeInsertBatchSize": 10000,
+    "writeJDBCBadDataBehavior": "DISCARD_ROW",
+    "readColsWithUnknownTzAsDates": false,
+    "readSQLDateColsAsDSSDates": true
+  },
+  "schema": {
+    "columns": [
+      {
+        "name": "Trap",
+        "type": "string"
+      },
+      {
+        "name": "Date",
+        "type": "string"
+      },
+      {
+        "name": "Date_parsed_max",
+        "type": "date"
+      },
+      {
+        "name": "Day_Number_max",
+        "type": "bigint"
+      },
+      {
+        "name": "Date_parsed_year_max",
+        "type": "bigint"
+      },
+      {
+        "name": "Date_parsed_month_max",
+        "type": "bigint"
+      },
+      {
+        "name": "Date_parsed_day_max",
+        "type": "bigint"
+      },
+      {
+        "name": "Address_max",
+        "type": "string"
+      },
+      {
+        "name": "Block_max",
+        "type": "bigint"
+      },
+      {
+        "name": "Street_max",
+        "type": "string"
+      },
+      {
+        "name": "AddressNumberAndStreet_max",
+        "type": "string"
+      },
+      {
+        "name": "Latitude_max",
+        "type": "double"
+      },
+      {
+        "name": "Longitude_max",
+        "type": "double"
+      },
+      {
+        "name": "AddressAccuracy_max",
+        "type": "bigint"
+      },
+      {
+        "name": "NumMosquitos_sum",
+        "type": "bigint"
+      },
+      {
+        "name": "WnvPresent_max",
+        "type": "bigint"
+      },
+      {
+        "name": "GeoPoint_max",
+        "type": "string"
+      },
+      {
+        "name": "Tmax_max",
+        "type": "bigint"
+      },
+      {
+        "name": "Tmin_max",
+        "type": "bigint"
+      },
+      {
+        "name": "Tavg_max",
+        "type": "bigint"
+      },
+      {
+        "name": "Depart_max",
+        "type": "bigint"
+      },
+      {
+        "name": "DewPoint_max",
+        "type": "bigint"
+      },
+      {
+        "name": "WetBulb_max",
+        "type": "bigint"
+      },
+      {
+        "name": "Heat_max",
+        "type": "bigint"
+      },
+      {
+        "name": "Cool_max",
+        "type": "bigint"
+      },
+      {
+        "name": "Sunrise_max",
+        "type": "string"
+      },
+      {
+        "name": "Sunset_max",
+        "type": "bigint"
+      },
+      {
+        "name": "daylight",
+        "type": "double"
+      },
+      {
+        "name": "CodeSum_max",
+        "type": "string"
+      },
+      {
+        "name": "PrecipTotal_max",
+        "type": "double"
+      },
+      {
+        "name": "StnPressure_max",
+        "type": "double"
+      },
+      {
+        "name": "SeaLevel_max",
+        "type": "double"
+      },
+      {
+        "name": "ResultSpeed_max",
+        "type": "double"
+      },
+      {
+        "name": "ResultDir_max",
+        "type": "bigint"
+      },
+      {
+        "name": "AvgSpeed_max",
+        "type": "double"
+      },
+      {
+        "name": "count",
+        "type": "bigint"
+      },
+      {
+        "name": "proba_0",
+        "type": "double"
+      },
+      {
+        "name": "proba_1",
+        "type": "double"
+      },
+      {
+        "name": "prediction",
+        "type": "string"
+      }
+    ],
+    "userModified": true
+  },
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}

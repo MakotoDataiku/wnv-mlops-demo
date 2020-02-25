@@ -135,11 +135,11 @@
   "name": "West Nile Virus (Discovery)\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 21,
+    "versionNumber": 22,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1582636859648
+    "lastModifiedOn": 1582646288406
   },
   "creationTag": {
     "versionNumber": 0,

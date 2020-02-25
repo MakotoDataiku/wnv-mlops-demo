@@ -1,6 +1,6 @@
 {
   "uiData": {
-    "mode": "SQL",
+    "mode": "\u0026\u0026",
     "conditions": [
       {
         "input": "Station",
@@ -13,10 +13,10 @@
   },
   "expression": "\"Station\" \u003d 1",
   "$status": {
-    "validated": false,
+    "validated": true,
     "fullyTranslated": false,
     "ok": false,
-    "message": "Filter expression is invalid"
+    "message": "Incorrect formula: \u0027\"Station\" \u003d 1\u0027 : Unidentified token \"\u003d\". (Parsing error at offset 10)"
   },
   "distinct": false,
   "enabled": true

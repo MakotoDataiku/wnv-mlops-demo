@@ -81,31 +81,7 @@
     {
       "id": "foJH9XU",
       "grid": {
-        "tiles": [
-          {
-            "tileType": "INSIGHT",
-            "box": {
-              "top": 0,
-              "left": 0,
-              "width": 2,
-              "height": 2
-            },
-            "clickAction": "OPEN_INSIGHT",
-            "tileParams": {
-              "showXAxis": true,
-              "showYAxis": true,
-              "showLegend": false,
-              "showTooltips": true,
-              "autoPlayAnimation": true
-            },
-            "autoLoad": true,
-            "showTitle": "YES",
-            "insightId": "hOw67bo",
-            "insightType": "chart",
-            "displayMode": "INSIGHT",
-            "resizeImageMode": "FIT_SIZE"
-          }
-        ]
+        "tiles": []
       },
       "showTitle": false
     }
@@ -115,11 +91,11 @@
   "name": "West Nile Virus (Discovery)\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 15,
+    "versionNumber": 16,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1582636764429
+    "lastModifiedOn": 1582636771487
   },
   "creationTag": {
     "versionNumber": 0,

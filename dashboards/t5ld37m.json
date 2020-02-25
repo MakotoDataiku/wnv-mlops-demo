@@ -132,14 +132,14 @@
   ],
   "owner": "admin",
   "listed": true,
-  "name": "West Nile Virus (Discovery)\u0027s default dashboard",
+  "name": "How West Nile Virus scares people out",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 22,
+    "versionNumber": 23,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1582646288406
+    "lastModifiedOn": 1582646310069
   },
   "creationTag": {
     "versionNumber": 0,

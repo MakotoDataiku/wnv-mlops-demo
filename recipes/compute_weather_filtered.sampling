@@ -11,7 +11,7 @@
       }
     ]
   },
-  "expression": "\"Station\" \u003d \u00271\u0027",
+  "expression": "\"Station\" \u003d 1",
   "$status": {
     "validated": false,
     "fullyTranslated": false,

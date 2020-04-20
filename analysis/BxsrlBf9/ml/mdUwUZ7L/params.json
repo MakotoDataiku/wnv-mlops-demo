@@ -931,7 +931,7 @@
     "gbt_classification": {
       "deviance": true,
       "exponential": false,
-      "enabled": true,
+      "enabled": false,
       "n_estimators": [
         100
       ],
@@ -1199,7 +1199,7 @@
       "min_std_dev": 0.001
     },
     "xgboost": {
-      "enabled": true,
+      "enabled": false,
       "max_depth": [
         3
       ],

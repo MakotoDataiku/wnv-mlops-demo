@@ -1,5 +1,10 @@
 {
   "tags": {
-    "recipe-editor": {}
+    "recipe-editor": {
+      "color": "#1ac2ab"
+    },
+    "contains-chart": {
+      "color": "#1ac2ab"
+    }
   }
 }

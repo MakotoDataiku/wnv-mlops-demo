@@ -3,7 +3,15 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "customConfig": {},
+    "customConfig": {
+      "n_components": 2,
+      "VIP_fig_name": "VIP",
+      "T_scores_fig_name": "T_scores",
+      "P_loadings_fig_name": "P_loadings",
+      "target_vars": [
+        "WnvPresent_max"
+      ]
+    },
     "containerSelection": {
       "containerMode": "INHERIT"
     }
@@ -58,11 +66,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1587540727556
+    "lastModifiedOn": 1587540734703
   },
   "creationTag": {
     "versionNumber": 0,

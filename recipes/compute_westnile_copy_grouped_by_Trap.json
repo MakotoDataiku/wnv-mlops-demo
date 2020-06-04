@@ -11,7 +11,7 @@
     "main": {
       "items": [
         {
-          "ref": "westnile_joined_copy",
+          "ref": "westnile_joined",
           "deps": []
         }
       ]
@@ -28,11 +28,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1582584726833
+    "lastModifiedOn": 1591262663468
   },
   "creationTag": {
     "versionNumber": 0,

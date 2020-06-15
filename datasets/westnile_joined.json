@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1582558946715
+    "lastModifiedOn": 1592207650591
   },
   "creationTag": {
     "versionNumber": 0,
@@ -72,7 +72,9 @@
     },
     "lastModifiedOn": 1582558946670
   },
-  "tags": [],
+  "tags": [
+    "data cleaning"
+  ],
   "params": {
     "connection": "filesystem_managed",
     "path": "${projectKey}/westnile_joined",

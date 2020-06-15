@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1591262641053
+    "lastModifiedOn": 1592207650602
   },
   "creationTag": {
     "versionNumber": 0,
@@ -72,7 +72,9 @@
     },
     "lastModifiedOn": 1582631688504
   },
-  "tags": [],
+  "tags": [
+    "data cleaning"
+  ],
   "params": {
     "connection": "filesystem_managed",
     "path": "${projectKey}/unlabelled",

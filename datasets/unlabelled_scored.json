@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1591262641055
+    "lastModifiedOn": 1592207659213
   },
   "creationTag": {
     "versionNumber": 0,
@@ -72,7 +72,9 @@
     },
     "lastModifiedOn": 1582636284498
   },
-  "tags": [],
+  "tags": [
+    "scored data"
+  ],
   "params": {
     "connection": "filesystem_managed",
     "path": "${projectKey}/unlabelled_scored",

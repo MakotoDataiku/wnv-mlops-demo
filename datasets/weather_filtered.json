@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1582552807194
+    "lastModifiedOn": 1592207593710
   },
   "creationTag": {
     "versionNumber": 0,
@@ -72,7 +72,9 @@
     },
     "lastModifiedOn": 1582552807189
   },
-  "tags": [],
+  "tags": [
+    "weather data"
+  ],
   "params": {
     "connection": "filesystem_managed",
     "path": "${projectKey}/weather_filtered",

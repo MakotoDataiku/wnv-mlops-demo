@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1587541514011
+    "lastModifiedOn": 1592207606166
   },
   "creationTag": {
     "versionNumber": 0,
@@ -73,7 +73,8 @@
     "lastModifiedOn": 1582553934759
   },
   "tags": [
-    "contains-chart"
+    "contains-chart",
+    "mosquito data"
   ],
   "params": {
     "connection": "filesystem_managed",

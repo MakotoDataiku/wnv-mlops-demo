@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1582552259690
+    "lastModifiedOn": 1592207606162
   },
   "creationTag": {
     "versionNumber": 0,
@@ -71,7 +71,9 @@
     },
     "lastModifiedOn": 1582552259656
   },
-  "tags": [],
+  "tags": [
+    "mosquito data"
+  ],
   "params": {
     "uploadConnection": "Default (in DSS data dir.)",
     "notReadyIfEmpty": false,

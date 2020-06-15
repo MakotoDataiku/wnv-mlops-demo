@@ -1,14 +1,25 @@
 {
   "tags": {
+    "deleted-recipe-editor": {
+      "color": "#90a8b7"
+    },
+    "mosquito data": {
+      "color": "#77bec2"
+    },
+    "data cleaning": {
+      "color": "#28aadd"
+    },
     "recipe-editor": {
       "color": "#1ac2ab"
+    },
+    "weather data": {
+      "color": "#123883"
     },
     "contains-chart": {
       "color": "#1ac2ab"
     },
-    "deleted-recipe-editor": {},
-    "machine learning": {},
-    "weather data": {},
-    "mosquito data": {}
+    "machine learning": {
+      "color": "#28aadd"
+    }
   }
 }

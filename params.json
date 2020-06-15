@@ -174,11 +174,18 @@
         "containerSelection": {
           "containerMode": "INHERIT"
         },
+        "overrideGlobalK8sExposition": false,
         "exposition": {
           "type": "local_process",
           "params": {}
         },
-        "nbReplicas": 1
+        "scaling": {
+          "initialReplicas": 1,
+          "hpa": false,
+          "hpaTargetCPUPercent": 0,
+          "hpaMinPods": 0,
+          "hpaMaxPods": 0
+        }
       }
     }
   },
@@ -241,11 +248,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1582636781617
+    "lastModifiedOn": 1592207925250
   },
   "creationTag": {
     "versionNumber": 0,
@@ -254,6 +261,7 @@
     },
     "lastModifiedOn": 1582552223494
   },
+  "description": "# Discovery Training Description\nThis is a project used for the Discovery Training. Discovery training is for learning about the basic functionality of DSS, mainly around visual recipes, visualisation and AutoML.\n\n# Project description\nThis project is to identify the day and location where mosquitoes with the West Nile Virus appear, in order to target the time and area to spray the pesticides. Researchers in Chicago collected a data about mosquitoes caught in traps. They analyze the mosquitoes and checked if there are mosquitoes containing West Nile Virus. ",
   "shortDesc": "The project *West Nile Virus (Discovery)* was created by Administrator on Feb 24th 2020",
   "tags": [],
   "customFields": {},

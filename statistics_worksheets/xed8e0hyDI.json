@@ -73,6 +73,17 @@
             "type": "CONTINUOUS"
           }
         ],
+        "splitBy": {
+          "groupingColumn": {
+            "name": "Block",
+            "type": "CONTINUOUS"
+          },
+          "binningMode": "AUTO",
+          "maxValues": 5,
+          "groupWithOthers": true,
+          "customBinningBoundaries": [],
+          "groupWithAll": true
+        },
         "id": "A1VbvDv"
       }
     ],
@@ -80,11 +91,11 @@
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1592905532586
+    "lastModifiedOn": 1592905693019
   },
   "creationTag": {
     "versionNumber": 0,

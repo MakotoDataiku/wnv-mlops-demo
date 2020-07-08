@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1594212945031
+    "lastModifiedOn": 1594213016341
   },
   "creationTag": {
     "versionNumber": 0,
@@ -93,6 +93,10 @@
       {
         "name": "Date_parsed",
         "type": "date"
+      },
+      {
+        "name": "date_formatted",
+        "type": "string"
       },
       {
         "name": "Day_Number",

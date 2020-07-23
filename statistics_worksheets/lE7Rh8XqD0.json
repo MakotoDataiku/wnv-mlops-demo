@@ -182,17 +182,161 @@
           }
         ],
         "id": "YskPU3P"
+      },
+      {
+        "type": "bivariate_header",
+        "yColumn": {
+          "name": "NumMosquitos_sum",
+          "type": "CONTINUOUS"
+        },
+        "showMosaicPlot": true,
+        "showHistogram": true,
+        "showScatterPlot": true,
+        "showFrequencyTable": true,
+        "showBoxPlot": true,
+        "showSummary": true,
+        "xColumns": [
+          {
+            "name": "daylight",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "cards": [
+          {
+            "type": "column_card",
+            "column": {
+              "name": "daylight",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "xColumn": {
+                  "name": "daylight",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "NumMosquitos_sum",
+                  "type": "CONTINUOUS"
+                },
+                "id": "Sr41HXd"
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "daylight",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "NumMosquitos_sum",
+                  "type": "CONTINUOUS"
+                },
+                "id": "ks49di2"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "daylight",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "NumMosquitos_sum",
+                  "type": "CONTINUOUS"
+                },
+                "id": "tl26I1H"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "daylight",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "NumMosquitos_sum",
+                  "type": "CONTINUOUS"
+                },
+                "id": "OpmI5hi"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "daylight",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "NumMosquitos_sum",
+                  "type": "CONTINUOUS"
+                },
+                "id": "WK4bbIb"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "daylight",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "NumMosquitos_sum",
+                  "type": "CONTINUOUS"
+                },
+                "id": "q7Lf8gE"
+              }
+            ],
+            "id": "Qrbtcps"
+          }
+        ],
+        "id": "3EI8bsa"
       }
     ],
     "id": "vLVscSp"
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595516676825
+    "lastModifiedOn": 1595516878814
   },
   "creationTag": {
     "versionNumber": 0,

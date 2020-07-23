@@ -326,17 +326,122 @@
           }
         ],
         "id": "3EI8bsa"
+      },
+      {
+        "type": "correlation_matrix",
+        "heatmapParams": {
+          "showValues": false,
+          "showColors": true,
+          "showAbsValues": false,
+          "threshold": 0.0
+        },
+        "metric": "SPEARMAN",
+        "columns": [
+          {
+            "name": "Day_Number_max",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Date_parsed_year_max",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Date_parsed_month_max",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Date_parsed_day_max",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Block_max",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Latitude_max",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Longitude_max",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "AddressAccuracy_max",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "NumMosquitos_sum",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "WnvPresent_max",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Tmax_max",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Tmin_max",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Tavg_max",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Depart_max",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "DewPoint_max",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Heat_max",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Cool_max",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Sunset_max",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "daylight",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "SeaLevel_max",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "ResultSpeed_max",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "ResultDir_max",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "AvgSpeed_max",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "id": "5P2e7Qp"
       }
     ],
     "id": "vLVscSp"
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595516878814
+    "lastModifiedOn": 1595516946413
   },
   "creationTag": {
     "versionNumber": 0,

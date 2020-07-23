@@ -588,17 +588,32 @@
           "type": "CONTINUOUS"
         },
         "id": "478OKuw"
+      },
+      {
+        "type": "pairwise_ttest",
+        "adjustmentMethod": "NONE",
+        "maxGroups": 10,
+        "confidenceLevel": 0.95,
+        "xColumn": {
+          "name": "WnvPresent_max",
+          "type": "CONTINUOUS"
+        },
+        "yColumn": {
+          "name": "Tmax_max",
+          "type": "CONTINUOUS"
+        },
+        "id": "6wLKdLj"
       }
     ],
     "id": "vLVscSp"
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 20,
+    "versionNumber": 21,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595519143952
+    "lastModifiedOn": 1595519210783
   },
   "creationTag": {
     "versionNumber": 0,

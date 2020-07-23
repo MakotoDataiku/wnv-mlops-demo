@@ -140,7 +140,7 @@
               "top": 2,
               "left": 0,
               "width": 12,
-              "height": 1
+              "height": 3
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
@@ -160,7 +160,7 @@
             "box": {
               "top": 0,
               "left": 0,
-              "width": 6,
+              "width": 12,
               "height": 2
             },
             "clickAction": "DO_NOTHING",
@@ -185,11 +185,11 @@
   "name": "How West Nile Virus scares people out",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 33,
+    "versionNumber": 34,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595507501876
+    "lastModifiedOn": 1595507513690
   },
   "creationTag": {
     "versionNumber": 0,

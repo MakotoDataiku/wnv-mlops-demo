@@ -2,10 +2,96 @@
   "script": {
     "steps": [],
     "maxProcessedMemTableBytes": -1,
+    "fullSampleStatistics": {
+      "engineConfig": {
+        "padRunsWithMetrics": false,
+        "hive": {
+          "active": true,
+          "extraConf": []
+        },
+        "basic": {},
+        "dss": {
+          "active": true,
+          "selection": {
+            "useMemTable": false,
+            "filter": {
+              "distinct": false,
+              "enabled": false
+            },
+            "partitionSelectionMethod": "ALL",
+            "latestPartitionsN": 1,
+            "ordering": {
+              "enabled": false,
+              "rules": []
+            },
+            "samplingMethod": "FULL",
+            "maxRecords": -1,
+            "targetRatio": 0.02,
+            "withinFirstN": -1,
+            "maxReadUncompressedBytes": -1
+          }
+        },
+        "sql": {
+          "active": true
+        },
+        "impala": {
+          "active": true
+        },
+        "spark": {
+          "active": true,
+          "extraConf": []
+        },
+        "python": {}
+      },
+      "basic": true,
+      "countDistinct": true,
+      "advanced": true,
+      "percentile": false,
+      "validity": false,
+      "updateOnAnalyzeBoxOpen": false,
+      "computeCostFreeMetrics": false
+    },
     "columnsSelection": {
       "mode": "ALL"
     },
-    "columnWidthsByName": {},
+    "columnWidthsByName": {
+      "Trap": 100,
+      "Date": 100,
+      "Date_parsed_max": 183,
+      "Day_Number_max": 120,
+      "Date_parsed_year_max": 165,
+      "Date_parsed_month_max": 173,
+      "Date_parsed_day_max": 158,
+      "Address_max": 300,
+      "Block_max": 100,
+      "Street_max": 162,
+      "AddressNumberAndStreet_max": 300,
+      "Latitude_max": 134,
+      "Longitude_max": 141,
+      "AddressAccuracy_max": 158,
+      "NumMosquitos_sum": 135,
+      "WnvPresent_max": 120,
+      "GeoPoint_max": 204,
+      "Tmax_max": 100,
+      "Tmin_max": 100,
+      "Tavg_max": 100,
+      "Depart_max": 100,
+      "DewPoint_max": 105,
+      "WetBulb_max": 100,
+      "Heat_max": 100,
+      "Cool_max": 100,
+      "Sunrise_max": 100,
+      "Sunset_max": 100,
+      "daylight": 141,
+      "CodeSum_max": 100,
+      "PrecipTotal_max": 128,
+      "StnPressure_max": 128,
+      "SeaLevel_max": 105,
+      "ResultSpeed_max": 128,
+      "ResultDir_max": 113,
+      "AvgSpeed_max": 105,
+      "count": 100
+    },
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
       "individualColumns": [],
@@ -39,9 +125,45 @@
       "autoRefreshSample": false,
       "_refreshTrigger": 0
     },
-    "exploreUIParams": {},
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
     "globalSearchQuery": "",
-    "explorationFilters": [],
+    "explorationFilters": [
+      {
+        "column": "Block_max",
+        "type": "columnFilter",
+        "currentMode": "FACET",
+        "active": true,
+        "facet": {
+          "type": "facet",
+          "column": "Block_max",
+          "columnType": "NUMERICAL",
+          "currentMode": "ALPHANUM",
+          "sort": "count",
+          "selectedValues": {}
+        },
+        "alphanumFilter": {
+          "type": "alphanum",
+          "column": "Block_max",
+          "values": [],
+          "params": {
+            "mode": "full_string",
+            "normalization": "exact"
+          }
+        },
+        "validityFilter": {
+          "type": "validity",
+          "column": "Block_max",
+          "params": {
+            "type": "LongMeaning",
+            "ok": true,
+            "nok": true,
+            "empty": true
+          }
+        }
+      }
+    ],
     "previewMode": "ALL_ROWS"
   },
   "charts": [

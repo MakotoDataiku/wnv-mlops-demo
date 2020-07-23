@@ -53,7 +53,8 @@
           "objectType": "SCENARIO"
         },
         "modes": [
-          "READ"
+          "READ",
+          "RUN"
         ]
       }
     ]
@@ -269,11 +270,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 15,
+    "versionNumber": 16,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595507414242
+    "lastModifiedOn": 1595507459120
   },
   "creationTag": {
     "versionNumber": 0,

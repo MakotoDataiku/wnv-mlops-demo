@@ -137,20 +137,40 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 0,
+              "top": 2,
               "left": 0,
               "width": 12,
               "height": 1
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
-              "displayMode": "SIMPLE",
-              "range": "CURRENT_MONTH"
+              "displayMode": "DETAILED",
+              "range": "CURRENT_DAY"
             },
             "autoLoad": true,
             "showTitle": "MOUSEOVER",
+            "title": "Predict_virus scenario report",
             "insightId": "EPXZe3n",
             "insightType": "scenario_last_runs",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 0,
+              "left": 0,
+              "width": 6,
+              "height": 2
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "showLastRun": false
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "h7o4CQk",
+            "insightType": "scenario_run_button",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
           }
@@ -165,11 +185,11 @@
   "name": "How West Nile Virus scares people out",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 32,
+    "versionNumber": 33,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595507444047
+    "lastModifiedOn": 1595507501876
   },
   "creationTag": {
     "versionNumber": 0,

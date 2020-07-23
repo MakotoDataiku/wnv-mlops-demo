@@ -5,11 +5,11 @@
   "name": "predict_virus",
   "active": false,
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595507342977
+    "lastModifiedOn": 1595507361257
   },
   "checklists": {
     "checklists": []
@@ -27,7 +27,7 @@
       {
         "id": "build_0_true_d_unlabelled_scored",
         "type": "build_flowitem",
-        "name": "Step #1",
+        "name": "unlabelled_scored",
         "runConditionType": "RUN_IF_STATUS_MATCH",
         "runConditionStatuses": [
           "SUCCESS",

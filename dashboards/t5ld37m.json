@@ -99,7 +99,8 @@
         ]
       },
       "title": "Analysis of West Nile Virus epidemic",
-      "showTitle": true
+      "showTitle": true,
+      "backgroundColor": ""
     },
     {
       "id": "foJH9XU",
@@ -158,11 +159,11 @@
   "name": "How West Nile Virus scares people out",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 27,
+    "versionNumber": 28,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595506541252
+    "lastModifiedOn": 1595506598970
   },
   "creationTag": {
     "versionNumber": 0,

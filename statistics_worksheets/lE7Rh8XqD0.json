@@ -330,10 +330,10 @@
       {
         "type": "correlation_matrix",
         "heatmapParams": {
-          "showValues": false,
+          "showValues": true,
           "showColors": true,
           "showAbsValues": false,
-          "threshold": 0.0
+          "threshold": 0.7
         },
         "metric": "SPEARMAN",
         "columns": [
@@ -541,11 +541,11 @@
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595517173702
+    "lastModifiedOn": 1595517478638
   },
   "creationTag": {
     "versionNumber": 0,

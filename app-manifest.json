@@ -25,5 +25,7 @@
   "label": "West Nile Virus (Discovery)",
   "shortDesc": "The template *West Nile Virus (Discovery)* was created by Makoto Miyazaki on Jul 27th 2020",
   "tags": [],
+  "imgPattern": 5,
+  "showInitials": false,
   "instantiationPermission": "USE_APP_MASTER_PERMISSIONS"
 }

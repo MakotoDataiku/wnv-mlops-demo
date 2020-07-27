@@ -106,6 +106,7 @@
     ]
   },
   "projectType": "REGULAR",
+  "projectAppType": "APP_TEMPLATE",
   "owner": "admin",
   "permissions": [],
   "additionalDashboardUsers": {
@@ -150,11 +151,15 @@
     },
     "codeEnvs": {
       "python": {
-        "useBuiltinEnv": true,
+        "mode": "INHERIT",
         "preventOverride": false
       },
       "r": {
-        "useBuiltinEnv": true,
+        "mode": "INHERIT",
+        "preventOverride": false
+      },
+      "julia": {
+        "mode": "INHERIT",
         "preventOverride": false
       }
     },
@@ -205,9 +210,12 @@
           "initialReplicas": 1,
           "hpa": false,
           "hpaTargetCPUPercent": 0,
+          "hpaMetrics": [],
           "hpaMinPods": 0,
-          "hpaMaxPods": 0
-        }
+          "hpaMaxPods": 0,
+          "hpaAnnotations": []
+        },
+        "deploymentModifier": {}
       }
     }
   },
@@ -270,11 +278,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 16,
+    "versionNumber": 17,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595507459120
+    "lastModifiedOn": 1595855714208
   },
   "creationTag": {
     "versionNumber": 0,

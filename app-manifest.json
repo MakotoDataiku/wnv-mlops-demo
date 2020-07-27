@@ -1,6 +1,6 @@
 {
   "projectExportManifest": {
-    "exportUploads": false,
+    "exportUploads": true,
     "exportAllInputDatasets": false,
     "exportAllDatasets": false,
     "exportManagedFS": false,
@@ -10,7 +10,12 @@
     "exportAllInputManagedFolders": false,
     "exportInsightsData": false,
     "includedDatasetsData": [],
-    "includedSavedModels": [],
+    "includedSavedModels": [
+      {
+        "id": "jBq0j10r",
+        "name": "Prediction (GBT_CLASSIFICATION) on labelled"
+      }
+    ],
     "includedManagedFolders": [],
     "exportGitRepository": false
   },

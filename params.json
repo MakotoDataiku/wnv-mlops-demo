@@ -107,6 +107,16 @@
   },
   "projectType": "REGULAR",
   "projectAppType": "APP_TEMPLATE",
+  "bundleContainerSettings": {
+    "remapping": {
+      "connections": [],
+      "codeEnvs": []
+    },
+    "codeEnvsBehavior": {
+      "envImportSpecificationMode": "SPECIFIED",
+      "importTimeMode": "INSTALL_IF_MISS"
+    }
+  },
   "owner": "admin",
   "permissions": [],
   "additionalDashboardUsers": {
@@ -278,11 +288,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 17,
+    "versionNumber": 18,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595855714208
+    "lastModifiedOn": 1595855754484
   },
   "creationTag": {
     "versionNumber": 0,

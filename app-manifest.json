@@ -20,10 +20,10 @@
     "exportGitRepository": false
   },
   "instanceFeatures": {
-    "showFlowNavLink": false,
-    "showLabNavLink": false,
-    "showCodeNavLink": false,
-    "showVersionControlFeatures": false
+    "showFlowNavLink": true,
+    "showLabNavLink": true,
+    "showCodeNavLink": true,
+    "showVersionControlFeatures": true
   },
   "useAppHomepage": true,
   "homepageSections": [],

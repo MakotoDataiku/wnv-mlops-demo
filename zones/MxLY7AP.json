@@ -2,7 +2,20 @@
   "name": "input datasets",
   "color": "#C54F00",
   "items": [],
-  "shared": [],
+  "shared": [
+    {
+      "objectId": "westnile_until_2009",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "westnile_data_after_2010",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "weather",
+      "objectType": "DATASET"
+    }
+  ],
   "tags": [],
   "customFields": {},
   "checklists": {

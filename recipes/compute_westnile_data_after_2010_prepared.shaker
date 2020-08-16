@@ -26,7 +26,10 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
   "steps": [],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
@@ -35,7 +38,20 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "Address": 300,
+    "AddressNumberAndStreet": 300,
+    "Block": 100,
+    "Street": 162,
+    "AddressAccuracy": 128,
+    "Trap": 100,
+    "Latitude": 106,
+    "NumMosquitos": 105,
+    "WnvPresent": 100,
+    "Species": 169,
+    "Longitude": 113,
+    "Date": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {

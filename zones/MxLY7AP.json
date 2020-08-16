@@ -9,6 +9,14 @@
     {
       "objectId": "compute_westnile_data_after_2010_prepared",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_westnile_data_after_2010_prepared_stacked",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "westnile_data_after_2010_prepared_stacked",
+      "objectType": "DATASET"
     }
   ],
   "shared": [

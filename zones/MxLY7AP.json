@@ -1,7 +1,16 @@
 {
   "name": "input datasets",
   "color": "#C54F00",
-  "items": [],
+  "items": [
+    {
+      "objectId": "westnile_data_after_2010_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_westnile_data_after_2010_prepared",
+      "objectType": "RECIPE"
+    }
+  ],
   "shared": [
     {
       "objectId": "westnile_until_2009",

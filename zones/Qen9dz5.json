@@ -1,7 +1,36 @@
 {
   "name": "Train models",
   "color": "#4B8021",
-  "items": [],
+  "items": [
+    {
+      "objectId": "score_unlabelled",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "unlabelled_scored",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "jBq0j10r",
+      "objectType": "SAVED_MODEL"
+    },
+    {
+      "objectId": "unlabelled",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "labelled",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "train_Prediction__GBT_CLASSIFICATION__on_labelled",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "split_westnile_by_Trap_prepared",
+      "objectType": "RECIPE"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},

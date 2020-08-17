@@ -1,7 +1,20 @@
 {
   "name": "input data",
   "color": "#8C2DA7",
-  "items": [],
+  "items": [
+    {
+      "objectId": "weather",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "westnile_until_2009",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "westnile_data_after_2010",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},

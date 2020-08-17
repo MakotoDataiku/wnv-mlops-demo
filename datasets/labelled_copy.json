@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1597673747744
+    "lastModifiedOn": 1597673920285
   },
   "creationTag": {
     "versionNumber": 0,
@@ -116,7 +116,7 @@
       },
       {
         "name": "NumMosquitos_sum",
-        "type": "bigint"
+        "type": "int"
       },
       {
         "name": "WnvPresent_max",

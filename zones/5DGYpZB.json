@@ -1,7 +1,52 @@
 {
   "name": "test",
   "color": "#C54F00",
-  "items": [],
+  "items": [
+    {
+      "objectId": "westnile_stacked",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "weather_filtered",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "westnile_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "unlabelled_scored",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "unlabelled",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "labelled",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_westnile_stacked",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_weather_filtered",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_westnile_prepared",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "score_unlabelled",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "split_westnile_by_Trap_prepared",
+      "objectType": "RECIPE"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},

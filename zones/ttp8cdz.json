@@ -2,7 +2,24 @@
   "name": "test zone for makoto",
   "color": "#087ABF",
   "items": [],
-  "shared": [],
+  "shared": [
+    {
+      "objectId": "westnile_until_2009",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "westnile_data_after_2010",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "weather",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "westnile_stacked",
+      "objectType": "DATASET"
+    }
+  ],
   "tags": [],
   "customFields": {},
   "checklists": {

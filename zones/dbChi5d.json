@@ -2,7 +2,24 @@
   "name": "makoto test",
   "color": "#F9BE40",
   "items": [],
-  "shared": [],
+  "shared": [
+    {
+      "objectId": "westnile_stacked",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "weather_filtered",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "westnile_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "westnile_joined",
+      "objectType": "DATASET"
+    }
+  ],
   "tags": [],
   "customFields": {},
   "checklists": {

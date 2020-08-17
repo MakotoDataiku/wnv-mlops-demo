@@ -1,7 +1,64 @@
 {
   "name": "test",
   "color": "#465A64",
-  "items": [],
+  "items": [
+    {
+      "objectId": "westnile_until_2009",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "westnile_data_after_2010",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "weather",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "westnile_stacked",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "weather_filtered",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "unlabelled_scored",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "unlabelled",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "labelled",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "westnile_by_Trap_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_westnile_stacked",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_weather_filtered",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "score_unlabelled",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "split_westnile_by_Trap_prepared",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_westnile_by_Trap_prepared",
+      "objectType": "RECIPE"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},

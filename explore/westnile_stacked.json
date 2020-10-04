@@ -96,7 +96,7 @@
             "column": "WnvPresent",
             "type": "NUMERICAL",
             "numParams": {
-              "mode": "FIXED_NB",
+              "mode": "NONE",
               "nbBins": 5,
               "binSize": 100,
               "emptyBinsMode": "ZEROS"
@@ -223,7 +223,7 @@
           "gridLonDeg": 0.6,
           "gridLatDeg": 0.6
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABCUlEQVRoQ+2YsQ2DMBBFjx3Ss4CXSB9lBorswAxRlA1S0NO6ZwkWSAYhUSSIEDqLi/AlZ/i0WMb/v3+H7Yw29mQhva5yDfeuLdp9yh5B8EAPhHsnxpFO0ZRFkYZgJgXWGhwIf9O0EGlE2loFE6GGUcOTVGLjwZSp5QMGajh2DbvK3QLHzNM/erg6YWubEwhWiLSpmxMQHgjnpWfJ3M+Hz52WpD4lY37ZvIKEIbjHMCYcy5RkCEMwk4JV1bCEsGTMqiINwUzsQVjRgUX/YUlcJWNi6pv7ngnBc4t8G5KXviai3dScZ9ddH5ejl+4Qg4Jjum5pLgi2RENjLSCs4aqlOUHYEg2NtWyO8AukdkA4neDxnwAAAABJRU5ErkJggg\u003d\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABCklEQVRoQ+1Yuw3CMBC1l0B0WYEWUdFTUbAKrMAqFKmghQrRsgIdYokgoQRF4SxfFPvOJi9tTr6839mxNSN7rAtveXteqHfr+XSZM0cA3KgHhWsm2pbOkZRBlgZgwgWpDTgo3GdowdKwdGoJNgYZRoY7rsTBg4hpyj8YyHDoDB+urxk1qzeLyV1jhkdXOLXDCQCHtjQUVj5+Oi1dbI/kndZjv/reaXHU49RIDi8AbtjmKMyp+SuFAbi2R9+cZ5NhjsKcGgCOyMCgKc1Rj1MTEd/P0gAceluSVtjXLwmFfR/5EaGqbLE7nSn7t3cF31pOwJK5kuwFwJJsa/SCwhqsS/aEwpJsa/QancJvvm8+OMLQ8x8AAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"

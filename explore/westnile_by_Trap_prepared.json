@@ -192,7 +192,7 @@
           "maxReadUncompressedBytes": -1
         },
         "autoRefreshSample": false,
-        "_refreshTrigger": 1
+        "_refreshTrigger": 2
       },
       "def": {
         "type": "multi_columns_lines",

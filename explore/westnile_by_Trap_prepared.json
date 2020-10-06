@@ -374,7 +374,7 @@
         "chartHeight": 200,
         "singleXAxis": true,
         "multiTooltips": false,
-        "animationFrameDuration": 1000,
+        "animationFrameDuration": 3000,
         "animationRepeat": true,
         "colorOptions": {
           "singleColor": "#2678B1",

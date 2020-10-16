@@ -82,7 +82,7 @@
     {
       "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": true,
+      "disabled": false,
       "type": "GeoPointCreator",
       "params": {
         "out_column": "GeoPoint",

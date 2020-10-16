@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1602821590810
+    "lastModifiedOn": 1602821674714
   },
   "creationTag": {
     "versionNumber": 0,
@@ -162,6 +162,10 @@
       },
       {
         "name": "GeoPoint",
+        "type": "string"
+      },
+      {
+        "name": "newcolumn_expression",
         "type": "string"
       }
     ],

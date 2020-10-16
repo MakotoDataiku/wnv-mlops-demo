@@ -1,5 +1,5 @@
 {
-  "type": "PostgreSQL",
+  "type": "Filesystem",
   "managed": true,
   "formatType": "csv",
   "checklists": {
@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 14,
+    "versionNumber": 15,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1602821782450
+    "lastModifiedOn": 1602821792490
   },
   "creationTag": {
     "versionNumber": 0,
@@ -77,18 +77,15 @@
     "mosquito data"
   ],
   "params": {
-    "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
-    "connection": "PostgreSQL",
+    "connection": "filesystem_managed",
+    "path": "${projectKey}/westnile_prepared",
     "notReadyIfEmpty": false,
-    "mode": "table",
-    "partitioningType": "custom",
-    "normalizeDoubles": true,
-    "table": "${projectKey}_westnile_prepared",
-    "tableCreationMode": "auto",
-    "writeInsertBatchSize": 10000,
-    "writeJDBCBadDataBehavior": "DISCARD_ROW",
-    "readColsWithUnknownTzAsDates": false,
-    "readSQLDateColsAsDSSDates": true
+    "filesSelectionRules": {
+      "mode": "ALL",
+      "excludeRules": [],
+      "includeRules": [],
+      "explicitFiles": []
+    }
   },
   "schema": {
     "columns": [

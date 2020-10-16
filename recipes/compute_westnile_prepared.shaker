@@ -20,7 +20,8 @@
       "maxStoredBytes": 104857600,
       "targetRatio": 0.02,
       "maxReadUncompressedBytes": -1,
-      "samplingMethod": "HEAD_SEQUENTIAL"
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "timeout": -1
     },
     "autoRefreshSample": false
   },
@@ -79,9 +80,9 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": false,
+      "disabled": true,
       "type": "GeoPointCreator",
       "params": {
         "out_column": "GeoPoint",
@@ -98,6 +99,26 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
+  "columnWidthsByName": {
+    "Day_Number": 100,
+    "Address": 300,
+    "Date_parsed": 183,
+    "AddressAccuracy": 128,
+    "Trap": 100,
+    "Latitude": 106,
+    "Longitude": 113,
+    "Date": 100,
+    "Date_parsed_day": 128,
+    "GeoPoint": 204,
+    "Date_parsed_year": 135,
+    "AddressNumberAndStreet": 300,
+    "Block": 100,
+    "Street": 162,
+    "Date_parsed_month": 143,
+    "NumMosquitos": 105,
+    "WnvPresent": 100,
+    "Species": 169
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {

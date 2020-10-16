@@ -90,6 +90,17 @@
         "lon_column": "Longitude"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "[1, 2, 3]",
+        "column": "newcolumn_expression"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -103,6 +114,7 @@
     "Day_Number": 100,
     "Address": 300,
     "Date_parsed": 183,
+    "newcolumn_expression": 165,
     "AddressAccuracy": 128,
     "Trap": 100,
     "Latitude": 106,

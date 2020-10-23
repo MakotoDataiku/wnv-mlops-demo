@@ -114,11 +114,6 @@
       "table": 0
     },
     {
-      "name": "GeoPoint",
-      "type": "string",
-      "table": 0
-    },
-    {
       "name": "Station",
       "type": "string",
       "table": 1
@@ -350,10 +345,6 @@
           {
             "name": "WnvPresent",
             "type": "bigint"
-          },
-          {
-            "name": "GeoPoint",
-            "type": "string"
           },
           {
             "name": "Station",

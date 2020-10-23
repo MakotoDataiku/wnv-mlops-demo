@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1603421025428
+    "lastModifiedOn": 1603422671291
   },
   "creationTag": {
     "versionNumber": 0,
@@ -152,6 +152,10 @@
       {
         "name": "WnvPresent_max",
         "type": "bigint"
+      },
+      {
+        "name": "GeoPoint_max",
+        "type": "string"
       },
       {
         "name": "Station_max",

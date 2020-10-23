@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1603420989219
+    "lastModifiedOn": 1603421629487
   },
   "creationTag": {
     "versionNumber": 0,
@@ -155,6 +155,10 @@
       {
         "name": "WnvPresent",
         "type": "bigint"
+      },
+      {
+        "name": "GeoPoint",
+        "type": "string"
       },
       {
         "name": "Station",

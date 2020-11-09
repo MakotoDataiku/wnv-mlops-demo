@@ -3,13 +3,13 @@
   "id": "PREDICT_VIRUS",
   "type": "step_based",
   "name": "predict_virus",
-  "active": false,
+  "active": true,
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1604899065551
+    "lastModifiedOn": 1604903369753
   },
   "checklists": {
     "checklists": []

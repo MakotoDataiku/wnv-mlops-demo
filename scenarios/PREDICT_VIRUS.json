@@ -5,11 +5,11 @@
   "name": "predict_virus",
   "active": false,
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595598458206
+    "lastModifiedOn": 1604899059741
   },
   "checklists": {
     "checklists": []
@@ -28,7 +28,7 @@
       "delay": 5,
       "active": true,
       "params": {
-        "frequency": "Daily",
+        "frequency": "Minutely",
         "daysOfWeek": [
           "Saturday"
         ],
@@ -43,7 +43,7 @@
       "type": "temporal",
       "name": "daily update 2",
       "delay": 5,
-      "active": true,
+      "active": false,
       "params": {
         "frequency": "Daily",
         "daysOfWeek": [
@@ -60,7 +60,7 @@
       "type": "temporal",
       "name": "daily update 3",
       "delay": 5,
-      "active": true,
+      "active": false,
       "params": {
         "frequency": "Daily",
         "daysOfWeek": [

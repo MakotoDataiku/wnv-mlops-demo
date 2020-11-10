@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1603422781805
+    "lastModifiedOn": 1605002654788
   },
   "creationTag": {
     "versionNumber": 0,
@@ -73,8 +73,9 @@
     "lastModifiedOn": 1582584753136
   },
   "tags": [
+    "data cleaning",
     "contains-chart",
-    "data cleaning"
+    "dtw"
   ],
   "params": {
     "connection": "filesystem_managed",

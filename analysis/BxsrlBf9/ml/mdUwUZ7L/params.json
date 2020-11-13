@@ -183,8 +183,8 @@
         "max_nb_categories": 100,
         "max_cat_safety": 200,
         "nb_bins_hashing": 1048576,
-        "dummy_drop": "NONE",
-        "role": "REJECT",
+        "dummy_drop": "AUTO",
+        "role": "INPUT",
         "type": "CATEGORY",
         "state": {
           "userModified": false,
@@ -199,16 +199,16 @@
             "max_nb_categories": 100,
             "max_cat_safety": 200,
             "nb_bins_hashing": 1048576,
-            "dummy_drop": "AUTO",
+            "dummy_drop": "NONE",
             "role": "REJECT",
             "type": "CATEGORY",
+            "autoReason": "REJECT_MISSING",
             "customHandlingCode": "",
             "customProcessorWantsMatrix": false,
             "sendToInput": "main"
           },
-          "recordedMeaning": "Text"
+          "recordedMeaning": "GeoPoint"
         },
-        "autoReason": "REJECT_MISSING",
         "customHandlingCode": "",
         "customProcessorWantsMatrix": false,
         "sendToInput": "main"

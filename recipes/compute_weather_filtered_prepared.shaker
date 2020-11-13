@@ -26,8 +26,22 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "column": "new_col"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -35,7 +49,30 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "AvgSpeed": 100,
+    "CodeSum": 100,
+    "Cool": 100,
+    "DewPoint": 100,
+    "ResultDir": 100,
+    "Date": 100,
+    "Depth": 100,
+    "SeaLevel": 100,
+    "StnPressure": 100,
+    "Station": 100,
+    "Sunset": 100,
+    "ResultSpeed": 100,
+    "Heat": 100,
+    "WetBulb": 100,
+    "Tmax": 100,
+    "Water1": 100,
+    "Tmin": 100,
+    "Tavg": 100,
+    "Depart": 100,
+    "SnowFall": 100,
+    "Sunrise": 100,
+    "PrecipTotal": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {

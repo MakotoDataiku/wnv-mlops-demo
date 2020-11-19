@@ -72,10 +72,6 @@
           {
             "targetProject": "DISCOVERY_ASTELLAS",
             "appearOnFlow": true
-          },
-          {
-            "targetProject": "ANOMALYDETECTIONOFTYRES",
-            "appearOnFlow": true
           }
         ]
       },
@@ -302,11 +298,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 23,
+    "versionNumber": 24,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1605002966413
+    "lastModifiedOn": 1605765699028
   },
   "creationTag": {
     "versionNumber": 0,

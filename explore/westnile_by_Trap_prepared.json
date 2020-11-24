@@ -201,15 +201,15 @@
         "userEditedName": true,
         "genericDimension0": [
           {
-            "column": "Date_parsed_max",
-            "type": "DATE",
+            "column": "Date_parsed_day_max",
+            "type": "NUMERICAL",
             "numParams": {
-              "emptyBinsMode": "AVERAGE"
+              "mode": "FIXED_NB",
+              "nbBins": 30,
+              "binSize": 100,
+              "emptyBinsMode": "ZEROS"
             },
-            "dateParams": {
-              "mode": "MONTH_OF_YEAR"
-            },
-            "maxValues": 0,
+            "maxValues": 100,
             "generateOthersCategory": true,
             "oneTickPerBin": false,
             "filters": [],
@@ -223,22 +223,33 @@
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of NumMosquitos_sum, descending"
+                "label": "Average of Date_parsed_month_max, descending"
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of NumMosquitos_sum, ascending",
+                "label": "Average of Date_parsed_month_max, ascending",
                 "sortAscending": true
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 1,
-                "label": "Average of WnvPresent_max, descending"
+                "label": "Average of NumMosquitos_sum, descending"
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 1,
+                "label": "Average of NumMosquitos_sum, ascending",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 2,
+                "label": "Average of WnvPresent_max, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 2,
                 "label": "Average of WnvPresent_max, ascending",
                 "sortAscending": true
               }
@@ -276,22 +287,33 @@
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of NumMosquitos_sum, descending"
+                "label": "Average of Date_parsed_month_max, descending"
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of NumMosquitos_sum, ascending",
+                "label": "Average of Date_parsed_month_max, ascending",
                 "sortAscending": true
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 1,
-                "label": "Average of WnvPresent_max, descending"
+                "label": "Average of NumMosquitos_sum, descending"
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 1,
+                "label": "Average of NumMosquitos_sum, ascending",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 2,
+                "label": "Average of WnvPresent_max, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 2,
                 "label": "Average of WnvPresent_max, ascending",
                 "sortAscending": true
               }
@@ -304,6 +326,17 @@
           }
         ],
         "genericMeasures": [
+          {
+            "column": "Date_parsed_month_max",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0
+          },
           {
             "column": "NumMosquitos_sum",
             "function": "AVG",
@@ -413,7 +446,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAYElEQVRoQ+3UAREAQAiEQO1f+gN8A1wbCMztHLs99u94uG6cYYZjBCQdE/q9wzDDMQKSjgk1WpKWdIyApGNCrbSkJR0jIOmYUCstaUnHCEg6JtRKS1rSMQKSjgm10ueSfinJACn8bS8UAAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAADaklEQVRoQ+2a7UsUQRzH964HMEEoMn0T/QP2pC8Ugt4E5s3unrtnd2IFIT0ZHGlgUHEaPmAvEspDzB4kgkr0cPfc2Z3Nnt5Z9qKM8F1vit6IBWEQRYkXczCxnHe3s+et13Z3r25vZnZ+n/n+HmaGczF59nHlmrf6Mip51QW+rZUdOQcG443nUWDsat4A8xKvQx/0FIBtWoGcu7RnzLdPb5SmbeJb8dqcA+dd0sor4Nqp2uLFF23rHFmWeBlAKCLeSizyUXBuYTY4kj/AMoALb4NHnAo8AUXUYElhJwNzEre7aOnnh0jg6SItNA4DxyqMITkZhFQR9dICc1Fw4fNscKhs72CfIqAg7bjV9MtqHc4kceGytG3P4AOrCS9T6AJwpiuHx2WqcOnOoTL1kPp+NXPTjs2qwgeGO+eetXRX0E6O+zl6p1XT8QjO9NRZ2nwUgFO4ByuxFZpPmzPzHrOwyqpL26UwL4HbjIspp8nk/wewDMYYhtlEA+yV2Q5F1HpSeYIjFI5XgCi4AgV0MZ1Lsyq7WeO0r+n6ZAWYm+Aq1Qb1jV0ubRa3pJ2XwUMoosP2A0fZUVXQmqwAn7pZteHW6de/s5mlzeIXL0RWFCYTWQH2TnKtSr06QIA5CTSrPnQ3UR1eAmehD4VpVP6ngYlxBDiVsTQQBpc2vYTImcK0wEyMcTEuJkalMOS3Qh5+sT2GSQa14tL4egcK6BpR2CuDPkVEl2jASJ9d7VPF7/oPfrcyJisK14/Wbp9sevzJCjAxcjVJa02BiUsaYwwDb6kJn0QsmqdddQJcE9LuzPSyJ9LW2YTtpe3AZgri9rKq8JNJgS6rGk9LZu9OdvxcM2D/uH9jJBD5hY0wGoq/l1aGGZotYKJLJwNOzNDGZ14Gysfp1qZkMeyVQUhJcdVkKYbjRnXXeY1ZMxNgXgZRKCLBTGFOZvtVUWv/W3aiYAAKqJU8sxPisNYgt6yo3WnuyE2B/eP+okgg8iNRTTJJIjDNeZiTwA3Vh86YASeLZ6PKqVw6Xe02BcaTeu4fn9ePjpQng4v/5n5Zz3R1LZN20h+P9UbBPUVAx3jJ0wl9ercRAvePuZfjF/EkHGLr3SH30nKzIqI2s8SHgXfsv14NvfpzY18P8pToQE/6rwIqYLOJndReAHaSWpnYmncK/wFTOFdHqQlLDgAAAABJRU5ErkJggg\u003d\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"

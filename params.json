@@ -72,6 +72,10 @@
           {
             "targetProject": "DISCOVERY_ASTELLAS",
             "appearOnFlow": true
+          },
+          {
+            "targetProject": "MAHLETEST",
+            "appearOnFlow": true
           }
         ]
       },
@@ -86,6 +90,10 @@
           {
             "targetProject": "DISCOVERY_ASTELLAS",
             "appearOnFlow": true
+          },
+          {
+            "targetProject": "MAHLETEST",
+            "appearOnFlow": true
           }
         ]
       },
@@ -99,6 +107,10 @@
           },
           {
             "targetProject": "DISCOVERY_ASTELLAS",
+            "appearOnFlow": true
+          },
+          {
+            "targetProject": "MAHLETEST",
             "appearOnFlow": true
           }
         ]
@@ -288,11 +300,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 25,
+    "versionNumber": 28,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1605765703381
+    "lastModifiedOn": 1615564832339
   },
   "creationTag": {
     "versionNumber": 0,

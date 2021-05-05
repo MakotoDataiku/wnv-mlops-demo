@@ -4,7 +4,8 @@
   "params": {
     "autoStartBackend": false,
     "envSelection": {
-      "envMode": "INHERIT"
+      "envMode": "EXPLICIT_ENV",
+      "envName": "python36"
     },
     "nbProcesses": 1,
     "serveLocally": true,
@@ -33,11 +34,11 @@
   "config": {},
   "name": "test",
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1620222465539
+    "lastModifiedOn": 1620222484100
   },
   "creationTag": {
     "versionNumber": 0,

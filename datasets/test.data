@@ -13,23 +13,23 @@
       "4"
     ],
     [
-      null,
+      "4",
       "5"
     ],
     [
-      null,
-      null
+      "5",
+      "9"
     ],
     [
-      null,
-      null
+      "6",
+      "2"
     ]
   ],
   "schema": {
     "columns": [
-      {"name":"new_column","type":"string"},
-      {"name":"new_column_1","type":"string"}
+      {"name":"col1","type":"string"},
+      {"name":"col2","type":"string"}
     ],
-    "userModified": false
+    "userModified": true
   }
 }

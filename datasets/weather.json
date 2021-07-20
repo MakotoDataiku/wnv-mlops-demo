@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1592207588999
+    "lastModifiedOn": 1626784347688
   },
   "creationTag": {
     "versionNumber": 0,
@@ -128,7 +128,8 @@
       },
       {
         "name": "Sunrise",
-        "type": "string"
+        "type": "string",
+        "meaning": "LongMeaning"
       },
       {
         "name": "Sunset",
@@ -177,6 +178,7 @@
     ],
     "userModified": true
   },
+  "dkuProperties": [],
   "metrics": {
     "probes": [
       {

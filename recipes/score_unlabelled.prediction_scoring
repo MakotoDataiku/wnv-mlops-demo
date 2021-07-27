@@ -12,10 +12,17 @@
   "gpuAllowGrowth": false,
   "outputProbaPercentiles": false,
   "outputProbabilities": true,
-  "forceOriginalEngine": false,
+  "forceOriginalEngine": true,
+  "individualExplanationParams": {
+    "subChunkSize": 5000,
+    "method": "SHAPLEY",
+    "shapleyBackgroundSize": 100,
+    "nbExplanations": 3
+  },
   "forcedClassifierThreshold": 0,
   "batchSize": 100,
   "overrideModelSpecifiedThreshold": false,
+  "outputExplanations": true,
   "sparkParams": {
     "pipelineAllowMerge": true,
     "sparkPreparedDFStorageLevel": "MEMORY_AND_DISK",

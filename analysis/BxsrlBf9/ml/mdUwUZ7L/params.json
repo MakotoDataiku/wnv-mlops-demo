@@ -98,6 +98,7 @@
         "max_nb_categories": 100,
         "max_cat_safety": 200,
         "nb_bins_hashing": 1048576,
+        "hash_whole_categories": false,
         "dummy_drop": "AUTO",
         "role": "INPUT",
         "type": "CATEGORY",
@@ -183,6 +184,7 @@
         "max_nb_categories": 100,
         "max_cat_safety": 200,
         "nb_bins_hashing": 1048576,
+        "hash_whole_categories": false,
         "dummy_drop": "AUTO",
         "role": "INPUT",
         "type": "CATEGORY",
@@ -199,6 +201,7 @@
             "max_nb_categories": 100,
             "max_cat_safety": 200,
             "nb_bins_hashing": 1048576,
+            "hash_whole_categories": true,
             "dummy_drop": "NONE",
             "role": "REJECT",
             "type": "CATEGORY",
@@ -244,6 +247,7 @@
         "max_nb_categories": 100,
         "max_cat_safety": 200,
         "nb_bins_hashing": 1048576,
+        "hash_whole_categories": false,
         "dummy_drop": "AUTO",
         "role": "INPUT",
         "type": "CATEGORY",
@@ -564,6 +568,7 @@
         "max_nb_categories": 100,
         "max_cat_safety": 200,
         "nb_bins_hashing": 1048576,
+        "hash_whole_categories": false,
         "dummy_drop": "AUTO",
         "role": "INPUT",
         "type": "CATEGORY",
@@ -674,6 +679,7 @@
         "max_nb_categories": 100,
         "max_cat_safety": 200,
         "nb_bins_hashing": 1048576,
+        "hash_whole_categories": false,
         "dummy_drop": "AUTO",
         "role": "INPUT",
         "type": "CATEGORY",
@@ -759,6 +765,7 @@
         "max_nb_categories": 100,
         "max_cat_safety": 200,
         "nb_bins_hashing": 1048576,
+        "hash_whole_categories": false,
         "dummy_drop": "AUTO",
         "role": "REJECT",
         "type": "CATEGORY",
@@ -2505,6 +2512,7 @@
       "splitRatio": 0.8,
       "shuffleIterations": 1,
       "nFolds": 3,
+      "cvSeed": 1337,
       "stratified": true,
       "strategy": "GRID",
       "bayesianOptimizer": "SCIKIT_OPTIMIZE",
@@ -2513,7 +2521,9 @@
       "nIter": 0,
       "nIterRandom": 10,
       "timeout": 0,
-      "nJobs": 4
+      "nJobs": 4,
+      "distributed": false,
+      "nContainers": 4
     },
     "metrics": {
       "evaluationMetric": "ROC_AUC",
@@ -2531,8 +2541,44 @@
     "custom_mllib": [],
     "max_ensemble_nodes_serialized": 6000
   },
+  "assertionsParams": {
+    "assertions": []
+  },
   "id": "mdUwUZ7L",
   "initiator": "admin",
+  "diagnosticsSettings": {
+    "enabled": true,
+    "settings": [
+      {
+        "type": "ML_DIAGNOSTICS_DATASET_SANITY_CHECKS",
+        "enabled": true
+      },
+      {
+        "type": "ML_DIAGNOSTICS_MODELING_PARAMETERS",
+        "enabled": true
+      },
+      {
+        "type": "ML_DIAGNOSTICS_RUNTIME",
+        "enabled": true
+      },
+      {
+        "type": "ML_DIAGNOSTICS_TRAINING_OVERFIT",
+        "enabled": true
+      },
+      {
+        "type": "ML_DIAGNOSTICS_LEAKAGE_DETECTION",
+        "enabled": true
+      },
+      {
+        "type": "ML_DIAGNOSTICS_MODEL_CHECK",
+        "enabled": true
+      },
+      {
+        "type": "ML_DIAGNOSTICS_ML_ASSERTIONS",
+        "enabled": true
+      }
+    ]
+  },
   "taskType": "PREDICTION",
   "name": "Predict WnvPresent_max",
   "backendType": "PY_MEMORY",
@@ -2623,5 +2669,6 @@
       "withinFirstN": -1,
       "maxReadUncompressedBytes": -1
     }
-  }
+  },
+  "labels": []
 }

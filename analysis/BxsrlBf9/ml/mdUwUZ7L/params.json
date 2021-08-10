@@ -2542,7 +2542,30 @@
     "max_ensemble_nodes_serialized": 6000
   },
   "assertionsParams": {
-    "assertions": []
+    "assertions": [
+      {
+        "name": "Assertion 1",
+        "filter": {
+          "distinct": false,
+          "enabled": true,
+          "uiData": {
+            "mode": "\u0026\u0026",
+            "conditions": [
+              {
+                "input": "daylight",
+                "operator": "\u003e\u003d [number]",
+                "col": "Date",
+                "num": 8.0
+              }
+            ]
+          }
+        },
+        "assertionCondition": {
+          "expectedValidRatio": 0.9,
+          "expectedClass": "0"
+        }
+      }
+    ]
   },
   "id": "mdUwUZ7L",
   "initiator": "admin",

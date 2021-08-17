@@ -164,7 +164,7 @@
       "integrations": []
     },
     "flowBuildSettings": {
-      "mergeSparkPipelines": false,
+      "mergeSparkPipelines": true,
       "pruneBeforeSparkPipelines": true,
       "mergeSqlPipelines": false,
       "pruneBeforeSqlPipelines": true
@@ -321,11 +321,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 29,
+    "versionNumber": 30,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1620223632581
+    "lastModifiedOn": 1629196693703
   },
   "creationTag": {
     "versionNumber": 0,

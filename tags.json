@@ -9,19 +9,23 @@
     "data cleaning": {
       "color": "#28aadd"
     },
+    "dtw": {
+      "color": "#a088bd"
+    },
     "recipe-editor": {
       "color": "#1ac2ab"
     },
     "weather data": {
       "color": "#123883"
     },
+    "scored data": {
+      "color": "#d66b9b"
+    },
     "contains-chart": {
       "color": "#1ac2ab"
     },
     "machine learning": {
       "color": "#28aadd"
-    },
-    "scored data": {},
-    "dtw": {}
+    }
   }
 }

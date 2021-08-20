@@ -2,7 +2,7 @@
   "predictionType": "BINARY_CLASSIFICATION",
   "targetVariable": "WnvPresent_max",
   "weight": {
-    "weightMethod": "SAMPLE_WEIGHT"
+    "weightMethod": "CLASS_WEIGHT"
   },
   "time": {
     "enabled": false,

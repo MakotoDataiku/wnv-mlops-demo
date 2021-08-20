@@ -999,7 +999,9 @@
           "min": 1
         },
         "values": [
-          100
+          100,
+          50,
+          10
         ],
         "range": {
           "min": 80,
@@ -1717,7 +1719,7 @@
         }
       },
       "n_jobs": 2,
-      "enabled": true
+      "enabled": false
     },
     "neural_network": {
       "layer_sizes": {

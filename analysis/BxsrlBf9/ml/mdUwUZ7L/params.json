@@ -1728,10 +1728,7 @@
         "limit": {
           "min": 1
         },
-        "values": [
-          10,
-          20
-        ],
+        "values": [],
         "range": {
           "min": 8,
           "max": 16,

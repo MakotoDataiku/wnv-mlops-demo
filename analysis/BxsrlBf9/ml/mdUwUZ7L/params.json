@@ -1078,7 +1078,7 @@
           "scaling": "LINEAR"
         }
       },
-      "enabled": true
+      "enabled": false
     },
     "extra_trees": {
       "n_estimators": {
@@ -1729,7 +1729,8 @@
           "min": 1
         },
         "values": [
-          10
+          10,
+          20
         ],
         "range": {
           "min": 8,
@@ -1757,7 +1758,7 @@
       "nesterovs_momentum": true,
       "shuffle": true,
       "learning_rate_init": 0.001,
-      "enabled": false
+      "enabled": true
     },
     "svc_classifier": {
       "C": {

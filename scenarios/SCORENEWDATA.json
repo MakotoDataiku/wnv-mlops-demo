@@ -63,6 +63,30 @@
           "refreshHiveMetastore": true,
           "proceedOnFailure": false
         }
+      },
+      {
+        "id": "build_0_true_d_new_data_joined",
+        "type": "build_flowitem",
+        "name": "build dataset new_data_joined",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "new_data_joined"
+            }
+          ],
+          "jobType": "RECURSIVE_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
       }
     ]
   },

@@ -56,6 +56,15 @@
           "READ",
           "RUN"
         ]
+      },
+      {
+        "objectRef": {
+          "objectId": "new_data_scored",
+          "objectType": "DATASET"
+        },
+        "modes": [
+          "READ"
+        ]
       }
     ]
   },
@@ -325,11 +334,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 33,
+    "versionNumber": 34,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1629881240626
+    "lastModifiedOn": 1629882603637
   },
   "creationTag": {
     "versionNumber": 0,

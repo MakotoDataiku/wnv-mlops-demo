@@ -2552,17 +2552,17 @@
             "mode": "\u0026\u0026",
             "conditions": [
               {
-                "input": "daylight",
+                "input": "Tmax_max",
                 "operator": "\u003e\u003d [number]",
                 "col": "Date",
-                "num": 8.0
+                "num": 80.0
               }
             ]
           }
         },
         "assertionCondition": {
           "expectedValidRatio": 0.9,
-          "expectedClass": "0"
+          "expectedClass": "1"
         }
       }
     ]

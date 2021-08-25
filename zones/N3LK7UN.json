@@ -2,7 +2,12 @@
   "name": "New data",
   "color": "#C82423",
   "items": [],
-  "shared": [],
+  "shared": [
+    {
+      "objectId": "westnile_data_after_2010",
+      "objectType": "DATASET"
+    }
+  ],
   "tags": [],
   "customFields": {},
   "checklists": {

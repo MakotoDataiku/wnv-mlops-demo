@@ -5,11 +5,11 @@
   "name": "Champion Challenger",
   "active": false,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1629881135763
+    "lastModifiedOn": 1629881140983
   },
   "checklists": {
     "checklists": []

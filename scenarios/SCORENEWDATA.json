@@ -1,0 +1,71 @@
+{
+  "projectKey": "WESTNILEVIRUSMLOPS",
+  "id": "SCORENEWDATA",
+  "type": "step_based",
+  "name": "Score new data",
+  "active": false,
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1629880952460
+  },
+  "checklists": {
+    "checklists": []
+  },
+  "delayedTriggersBehavior": {
+    "delayWhileRunning": true,
+    "squashDelayedTriggers": true,
+    "suppressTriggersWhileRunning": true
+  },
+  "tags": [],
+  "triggers": [],
+  "reporters": [],
+  "params": {
+    "steps": [
+      {
+        "id": "build_0_true_d_new_data_prepared_d_new_data_joined_d_new_data_grouped_by_Trap_d_new_data_by_Trap_prepared_d_new_data_scored",
+        "type": "build_flowitem",
+        "name": "build dataset new_data_prepared dataset new_data_joined dataset new_data_grouped_by_Trap dataset new_data_by_Trap_prepared dataset new_data_scored",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "new_data_prepared"
+            },
+            {
+              "type": "DATASET",
+              "itemId": "new_data_joined"
+            },
+            {
+              "type": "DATASET",
+              "itemId": "new_data_grouped_by_Trap"
+            },
+            {
+              "type": "DATASET",
+              "itemId": "new_data_by_Trap_prepared"
+            },
+            {
+              "type": "DATASET",
+              "itemId": "new_data_scored"
+            }
+          ],
+          "jobType": "RECURSIVE_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      }
+    ]
+  },
+  "automationLocal": false,
+  "customFields": {}
+}

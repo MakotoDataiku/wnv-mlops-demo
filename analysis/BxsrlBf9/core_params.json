@@ -6,6 +6,7 @@
     "columnsSelection": {
       "mode": "ALL"
     },
+    "columnWidthsByName": {},
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
       "individualColumns": [],
@@ -16,6 +17,7 @@
     "explorationSampling": {
       "selection": {
         "maxStoredBytes": 104857600,
+        "timeout": -1,
         "filter": {
           "distinct": false,
           "enabled": false

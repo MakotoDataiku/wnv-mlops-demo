@@ -249,7 +249,15 @@
         "mode": "AUTO",
         "autoModeRepartitionInto": 10,
         "map": {
+          "weather_filtered_1": {
+            "cache": false,
+            "repartition": 10
+          },
           "weather_filtered": {
+            "cache": false,
+            "repartition": 10
+          },
+          "new_data_prepared": {
             "cache": false,
             "repartition": 10
           },
@@ -279,13 +287,7 @@
       "computedColumns": []
     },
     {
-      "preFilter": {
-        "distinct": false,
-        "enabled": false
-      },
-      "autoSelectColumns": false,
-      "index": 1,
-      "computedColumns": []
+      "index": 1
     }
   ],
   "computedColumns": [],

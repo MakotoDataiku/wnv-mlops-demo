@@ -1,4 +1,5 @@
 {
+  "name": "mosquitos-makoto",
   "endpoints": [
     {
       "modelRef": "jBq0j10r",
@@ -12,7 +13,29 @@
         "shapleyBackgroundSize": 100
       },
       "testQueries": [],
-      "enrichMapping": [],
+      "enrichMapping": [
+        {
+          "datasetRef": "westnile_by_Trap_prepared",
+          "packagingType": "REFERENCED",
+          "on": [
+            {
+              "resourceLookupCol": "Trap"
+            }
+          ],
+          "missingLookupKeyBehavior": "IGNORE",
+          "notFoundBehavior": "IGNORE",
+          "multiMatchBehavior": "KEEP_FIRST",
+          "columnsMapping": {
+            "Address_max": "Address_max",
+            "Block_max": "Block_max",
+            "Street_max": "Street_max",
+            "AddressNumberAndStreet_max": "AddressNumberAndStreet_max",
+            "Latitude_max": "Latitude_max",
+            "Longitude_max": "Longitude_max",
+            "AddressAccuracy_max": "AddressAccuracy_max"
+          }
+        }
+      ],
       "healthCheckQueries": [],
       "returnPostEnrichData": false,
       "auditPostEnrichData": false,

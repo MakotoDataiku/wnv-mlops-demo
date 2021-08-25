@@ -267,7 +267,7 @@
       }
     }
   },
-  "engineType": "SPARK",
+  "engineType": "SQL",
   "virtualInputs": [
     {
       "preFilter": {

@@ -27,10 +27,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "weather_filtered_1",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "new_data_prepared",
       "objectType": "DATASET"
     },

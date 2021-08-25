@@ -1,5 +1,5 @@
 {
-  "type": "Filesystem",
+  "type": "PostgreSQL",
   "managed": true,
   "formatType": "csv",
   "checklists": {
@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1629881110905
+    "lastModifiedOn": 1629881424019
   },
   "creationTag": {
     "versionNumber": 0,
@@ -74,15 +74,18 @@
   },
   "tags": [],
   "params": {
-    "connection": "filesystem_managed",
-    "path": "${projectKey}/drift_score",
+    "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
+    "connection": "PostgreSQL",
     "notReadyIfEmpty": false,
-    "filesSelectionRules": {
-      "mode": "ALL",
-      "excludeRules": [],
-      "includeRules": [],
-      "explicitFiles": []
-    }
+    "mode": "table",
+    "partitioningType": "custom",
+    "normalizeDoubles": true,
+    "table": "${projectKey}_drift_score",
+    "tableCreationMode": "auto",
+    "writeInsertBatchSize": 10000,
+    "writeJDBCBadDataBehavior": "DISCARD_ROW",
+    "readColsWithUnknownTzAsDates": false,
+    "readSQLDateColsAsDSSDates": true
   },
   "schema": {
     "columns": [
@@ -148,7 +151,7 @@
         "comment": "If the drift score is medium/high (above 0.1), we recommend you to check those features.\nA feature is considered risky if it is both in the top 40% of the most drifted features as well as the top 40% most important features in the original model."
       }
     ],
-    "userModified": false
+    "userModified": true
   },
   "dkuProperties": [],
   "metrics": {

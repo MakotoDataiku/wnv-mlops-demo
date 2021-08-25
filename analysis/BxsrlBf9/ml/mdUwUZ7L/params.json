@@ -28,8 +28,8 @@
         "enabled": false,
         "rules": []
       },
-      "samplingMethod": "FULL",
-      "maxRecords": 100000,
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "maxRecords": 1000,
       "targetRatio": 0.02,
       "withinFirstN": -1,
       "maxReadUncompressedBytes": -1

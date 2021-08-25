@@ -45,6 +45,10 @@
     {
       "objectId": "drift_score",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_drift_score",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],

@@ -28,8 +28,8 @@
         "enabled": false,
         "rules": []
       },
-      "samplingMethod": "HEAD_SEQUENTIAL",
-      "maxRecords": 1000,
+      "samplingMethod": "FULL",
+      "maxRecords": 100000,
       "targetRatio": 0.02,
       "withinFirstN": -1,
       "maxReadUncompressedBytes": -1
@@ -999,9 +999,7 @@
           "min": 1
         },
         "values": [
-          100,
-          50,
-          10
+          100
         ],
         "range": {
           "min": 80,
@@ -1078,7 +1076,7 @@
           "scaling": "LINEAR"
         }
       },
-      "enabled": false
+      "enabled": true
     },
     "extra_trees": {
       "n_estimators": {
@@ -1705,7 +1703,11 @@
           "min": 1.0E-23
         },
         "values": [
-          0.01
+          0.01,
+          0.1,
+          1.0,
+          10.0,
+          100.0
         ],
         "range": {
           "min": 0.01,
@@ -1724,7 +1726,9 @@
         "limit": {
           "min": 1
         },
-        "values": [],
+        "values": [
+          10
+        ],
         "range": {
           "min": 8,
           "max": 16,
@@ -2420,7 +2424,7 @@
     },
     "custom_python": [
       {
-        "enabled": false,
+        "enabled": true,
         "code": "# This sample code uses a standard scikit-learn algorithm, the Adaboost classifier.\n\n# Your code must create a \u0027clf\u0027 variable. This clf must be a scikit-learn compatible\n# model, ie, have at least fit(X,y) and predict(X) methods\n# For a classifier, it must also have a classes_ attribute\n\nfrom sklearn.ensemble import AdaBoostClassifier\n\nclf \u003d AdaBoostClassifier(n_estimators\u003d20)\n",
         "name": "Custom Python model"
       }
@@ -2538,30 +2542,7 @@
     "max_ensemble_nodes_serialized": 6000
   },
   "assertionsParams": {
-    "assertions": [
-      {
-        "name": "Assertion 1",
-        "filter": {
-          "distinct": false,
-          "enabled": true,
-          "uiData": {
-            "mode": "\u0026\u0026",
-            "conditions": [
-              {
-                "input": "Tmax_max",
-                "operator": "\u003e\u003d [number]",
-                "col": "Date",
-                "num": 80.0
-              }
-            ]
-          }
-        },
-        "assertionCondition": {
-          "expectedValidRatio": 0.9,
-          "expectedClass": "1"
-        }
-      }
-    ]
+    "assertions": []
   },
   "id": "mdUwUZ7L",
   "initiator": "admin",

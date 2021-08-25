@@ -5,11 +5,11 @@
   "name": "Score new data",
   "active": false,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1629880952460
+    "lastModifiedOn": 1629881011838
   },
   "checklists": {
     "checklists": []
@@ -41,22 +41,6 @@
             {
               "type": "DATASET",
               "itemId": "new_data_prepared"
-            },
-            {
-              "type": "DATASET",
-              "itemId": "new_data_joined"
-            },
-            {
-              "type": "DATASET",
-              "itemId": "new_data_grouped_by_Trap"
-            },
-            {
-              "type": "DATASET",
-              "itemId": "new_data_by_Trap_prepared"
-            },
-            {
-              "type": "DATASET",
-              "itemId": "new_data_scored"
             }
           ],
           "jobType": "RECURSIVE_BUILD",

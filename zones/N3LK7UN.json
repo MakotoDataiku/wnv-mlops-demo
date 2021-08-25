@@ -1,7 +1,48 @@
 {
   "name": "New data",
   "color": "#C82423",
-  "items": [],
+  "items": [
+    {
+      "objectId": "new_data_by_Trap_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_westnile_by_Trap_prepared_1",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "new_data_grouped_by_Trap",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_westnile_copy_grouped_by_Trap_1",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "new_data_joined",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_westnile_joined_1",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "weather_filtered_1",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "new_data_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_westnile_prepared_1",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_weather_filtered_1",
+      "objectType": "RECIPE"
+    }
+  ],
   "shared": [
     {
       "objectId": "westnile_data_after_2010",

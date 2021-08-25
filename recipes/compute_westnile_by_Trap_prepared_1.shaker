@@ -1,0 +1,175 @@
+{
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 1,
+    "selection": {
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": 104857600,
+      "targetRatio": 1.0,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "RANDOM_FIXED_RATIO",
+      "timeout": -1
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [
+    {
+      "validityFilter": {
+        "column": "WetBulb_max",
+        "type": "validity",
+        "params": {
+          "nok": true,
+          "type": "LongMeaning",
+          "ok": true,
+          "empty": true
+        }
+      },
+      "column": "WetBulb_max",
+      "active": true,
+      "alphanumFilter": {
+        "values": [],
+        "column": "WetBulb_max",
+        "type": "alphanum",
+        "params": {
+          "mode": "full_string",
+          "normalization": "exact"
+        }
+      },
+      "type": "columnFilter",
+      "$$hashKey": "object:14317",
+      "facet": {
+        "columnType": "NUMERICAL",
+        "selectedValues": {},
+        "column": "WetBulb_max",
+        "sort": "count",
+        "type": "facet",
+        "currentMode": "NUMERICAL"
+      },
+      "currentMode": "FACET"
+    }
+  ],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "(floor(Sunset_max/100) + (Sunset_max%100)/60) - (floor(Sunrise_max/100) + (Sunrise_max%100)/60)",
+        "column": "daylight"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "Station_max",
+          "Depth_max",
+          "Water1_max",
+          "SnowFall_max"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "M",
+            "to": "0"
+          },
+          {
+            "from": "T",
+            "to": "0.01"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [],
+        "appliesTo": "ALL",
+        "stopAfterFirstMatch": false,
+        "matching": "FULL_STRING"
+      },
+      "alwaysShowComment": false
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "columnWidthsByName": {
+    "Tmax_max": 100,
+    "Date_parsed_month_max": 173,
+    "Longitude_max": 141,
+    "Cool_max": 100,
+    "ResultSpeed_max": 128,
+    "Heat_max": 100,
+    "GeoPoint_max": 204,
+    "AddressAccuracy_max": 158,
+    "WetBulb_max": 100,
+    "NumMosquitos_sum": 135,
+    "Sunrise_max": 100,
+    "Date_parsed_year_max": 165,
+    "DewPoint_max": 105,
+    "SeaLevel_max": 105,
+    "Street_max": 162,
+    "CodeSum_max": 100,
+    "Depart_max": 100,
+    "Block_max": 100,
+    "AddressNumberAndStreet_max": 300,
+    "count": 100,
+    "Date_parsed_max": 183,
+    "Trap": 100,
+    "Day_Number_max": 120,
+    "Date_parsed_day_max": 158,
+    "Date": 100,
+    "Latitude_max": 134,
+    "Address_max": 300,
+    "Tavg_max": 100,
+    "StnPressure_max": 128,
+    "Tmin_max": 100,
+    "PrecipTotal_max": 128,
+    "daylight": 141,
+    "Sunset_max": 100,
+    "AvgSpeed_max": 105,
+    "WnvPresent_max": 120,
+    "ResultDir_max": 113
+  },
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
+  }
+}

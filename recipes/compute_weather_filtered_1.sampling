@@ -1,0 +1,23 @@
+{
+  "uiData": {
+    "mode": "\u0026\u0026",
+    "conditions": [
+      {
+        "input": "Station",
+        "col": "Date",
+        "string": "1",
+        "num": 0,
+        "operator": "\u003d\u003d [string]"
+      }
+    ]
+  },
+  "expression": "\"Station\" \u003d 1",
+  "$status": {
+    "validated": true,
+    "fullyTranslated": false,
+    "ok": false,
+    "message": "Incorrect formula: \u0027\"Station\" \u003d 1\u0027 : Unidentified token \"\u003d\". (Parsing error at offset 10)"
+  },
+  "distinct": false,
+  "enabled": true
+}

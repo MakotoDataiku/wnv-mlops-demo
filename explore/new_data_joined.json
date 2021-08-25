@@ -1,0 +1,345 @@
+{
+  "script": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "SELECT",
+      "list": [
+        {
+          "name": "Date",
+          "d": true
+        },
+        {
+          "name": "Date_parsed",
+          "d": false
+        },
+        {
+          "name": "Day_Number",
+          "d": false
+        },
+        {
+          "name": "Date_parsed_year",
+          "d": false
+        },
+        {
+          "name": "Date_parsed_month",
+          "d": false
+        },
+        {
+          "name": "Date_parsed_day",
+          "d": false
+        },
+        {
+          "name": "Address",
+          "d": false
+        },
+        {
+          "name": "Species",
+          "d": true
+        },
+        {
+          "name": "Block",
+          "d": false
+        },
+        {
+          "name": "Street",
+          "d": false
+        },
+        {
+          "name": "Trap",
+          "d": true
+        },
+        {
+          "name": "AddressNumberAndStreet",
+          "d": false
+        },
+        {
+          "name": "Latitude",
+          "d": false
+        },
+        {
+          "name": "Longitude",
+          "d": false
+        },
+        {
+          "name": "AddressAccuracy",
+          "d": false
+        },
+        {
+          "name": "NumMosquitos",
+          "d": true
+        },
+        {
+          "name": "WnvPresent",
+          "d": true
+        },
+        {
+          "name": "GeoPoint",
+          "d": false
+        },
+        {
+          "name": "Station",
+          "d": false
+        },
+        {
+          "name": "Tmax",
+          "d": false
+        },
+        {
+          "name": "Tmin",
+          "d": false
+        },
+        {
+          "name": "Tavg",
+          "d": false
+        },
+        {
+          "name": "Depart",
+          "d": false
+        },
+        {
+          "name": "DewPoint",
+          "d": false
+        },
+        {
+          "name": "WetBulb",
+          "d": false
+        },
+        {
+          "name": "Heat",
+          "d": false
+        },
+        {
+          "name": "Cool",
+          "d": false
+        },
+        {
+          "name": "Sunrise",
+          "d": false
+        },
+        {
+          "name": "Sunset",
+          "d": false
+        },
+        {
+          "name": "CodeSum",
+          "d": false
+        },
+        {
+          "name": "Depth",
+          "d": false
+        },
+        {
+          "name": "Water1",
+          "d": false
+        },
+        {
+          "name": "SnowFall",
+          "d": false
+        },
+        {
+          "name": "PrecipTotal",
+          "d": false
+        },
+        {
+          "name": "StnPressure",
+          "d": false
+        },
+        {
+          "name": "SeaLevel",
+          "d": false
+        },
+        {
+          "name": "ResultSpeed",
+          "d": false
+        },
+        {
+          "name": "ResultDir",
+          "d": false
+        },
+        {
+          "name": "AvgSpeed",
+          "d": false
+        }
+      ]
+    },
+    "columnWidthsByName": {
+      "Date": 100,
+      "Date_parsed": 183,
+      "Day_Number": 100,
+      "Date_parsed_year": 135,
+      "Date_parsed_month": 143,
+      "Date_parsed_day": 128,
+      "Address": 300,
+      "Species": 169,
+      "Block": 100,
+      "Street": 162,
+      "Trap": 100,
+      "AddressNumberAndStreet": 300,
+      "Latitude": 106,
+      "Longitude": 113,
+      "AddressAccuracy": 128,
+      "NumMosquitos": 105,
+      "WnvPresent": 100,
+      "GeoPoint": 204,
+      "Station": 100,
+      "Tmax": 100,
+      "Tmin": 100,
+      "Tavg": 100,
+      "Depart": 100,
+      "DewPoint": 100,
+      "WetBulb": 100,
+      "Heat": 100,
+      "Cool": 100,
+      "Sunrise": 100,
+      "Sunset": 100,
+      "CodeSum": 100,
+      "Depth": 100,
+      "Water1": 100,
+      "SnowFall": 100,
+      "PrecipTotal": 100,
+      "StnPressure": 100,
+      "SeaLevel": 100,
+      "ResultSpeed": 100,
+      "ResultDir": 100,
+      "AvgSpeed": 100
+    },
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
+    },
+    "sorting": [],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxStoredBytes": 104857600,
+        "timeout": -1,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "vizSampling": {
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
+    "globalSearchQuery": "",
+    "explorationFilters": [],
+    "previewMode": "ALL_ROWS"
+  },
+  "charts": [
+    {
+      "copySelectionFromScript": true,
+      "engineType": "LINO",
+      "def": {
+        "type": "grouped_columns",
+        "variant": "normal",
+        "name": "New chart",
+        "userEditedName": false,
+        "genericDimension0": [],
+        "genericDimension1": [],
+        "facetDimension": [],
+        "animationDimension": [],
+        "genericMeasures": [],
+        "xDimension": [],
+        "yDimension": [],
+        "uaXDimension": [],
+        "uaYDimension": [],
+        "uaSize": [],
+        "uaShape": [],
+        "uaColor": [],
+        "uaTooltip": [],
+        "groupDimension": [],
+        "xMeasure": [],
+        "yMeasure": [],
+        "colorMeasure": [],
+        "sizeMeasure": [],
+        "geometry": [],
+        "tooltipMeasures": [],
+        "boxplotBreakdownDim": [],
+        "boxplotValue": [],
+        "axis1LogScale": false,
+        "axis2LogScale": false,
+        "includeZero": true,
+        "smoothing": true,
+        "showLegend": true,
+        "showXAxis": false,
+        "showInChartValues": false,
+        "showInChartLabels": true,
+        "strokeWidth": 1,
+        "fillOpacity": 0.6,
+        "showXAxisLabel": true,
+        "showYAxisLabel": true,
+        "hexbinRadius": 20,
+        "hexbinNumber": 20,
+        "hexbinRadiusMode": "NUM_HEXAGONS",
+        "chartHeight": 200,
+        "singleXAxis": true,
+        "multiTooltips": false,
+        "animationFrameDuration": 3000,
+        "animationRepeat": true,
+        "colorOptions": {
+          "singleColor": "#2678B1",
+          "transparency": 0.75,
+          "colorPalette": "default",
+          "ccScaleMode": "NORMAL",
+          "customPalette": {
+            "id": "__dku_custom__",
+            "name": "Custom Palette",
+            "colors": [],
+            "values": [],
+            "fixedValues": false
+          },
+          "paletteType": "CONTINUOUS",
+          "quantizationMode": "NONE",
+          "numQuantizeSteps": 5,
+          "paletteMiddleValue": 0.0
+        },
+        "bubblesOptions": {
+          "defaultRadius": 5.0,
+          "singleShape": "FILLED_CIRCLE"
+        },
+        "computeMode": "NORMAL",
+        "xAxisMode": "NORMAL",
+        "yAxisMode": "NORMAL",
+        "pieOptions": {
+          "donutHoleSize": 54.0
+        },
+        "scatterOptions": {
+          "equalScales": false,
+          "identityLine": false
+        },
+        "mapOptions": {
+          "tilesLayer": "cartodb-positron",
+          "lockSquareGrid": false
+        },
+        "mapGridOptions": {
+          "gridLonDeg": 0.6,
+          "gridLatDeg": 0.6
+        },
+        "disableSafetyLimits": false,
+        "useLiveProcessingIfAvailable": true,
+        "legendPlacement": "OUTER_RIGHT"
+      },
+      "maxDataBytes": 157286400
+    }
+  ]
+}

@@ -1,213 +1,219 @@
 {
-  "projectKey": "WESTNILEVIRUSDISCOVERY",
-  "id": "PREDICT_VIRUS",
-  "type": "step_based",
-  "name": "predict_virus",
-  "active": false,
-  "versionTag": {
-    "versionNumber": 16,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1605245683983
-  },
+  "active": false, 
+  "automationLocal": false, 
   "checklists": {
     "checklists": []
-  },
+  }, 
+  "customFields": {}, 
   "delayedTriggersBehavior": {
-    "delayWhileRunning": true,
-    "squashDelayedTriggers": true,
+    "delayWhileRunning": true, 
+    "squashDelayedTriggers": true, 
     "suppressTriggersWhileRunning": true
-  },
-  "tags": [],
-  "triggers": [
-    {
-      "id": "Vut64dyk",
-      "type": "temporal",
-      "name": "daily update",
-      "delay": 5,
-      "active": false,
-      "params": {
-        "frequency": "Minutely",
-        "daysOfWeek": [
-          "Saturday"
-        ],
-        "dayOfMonth": 1,
-        "minute": 0,
-        "hour": 2,
-        "count": 5
-      }
-    },
-    {
-      "id": "FCFThdnq",
-      "type": "temporal",
-      "name": "daily update 2",
-      "delay": 5,
-      "active": false,
-      "params": {
-        "frequency": "Daily",
-        "daysOfWeek": [
-          "Saturday"
-        ],
-        "dayOfMonth": 1,
-        "minute": 0,
-        "hour": 6,
-        "count": 5
-      }
-    },
-    {
-      "id": "jNpAs6KM",
-      "type": "temporal",
-      "name": "daily update 3",
-      "delay": 5,
-      "active": false,
-      "params": {
-        "frequency": "Daily",
-        "daysOfWeek": [
-          "Saturday"
-        ],
-        "dayOfMonth": 1,
-        "minute": 0,
-        "hour": 10,
-        "count": 5
-      }
-    }
-  ],
-  "reporters": [],
+  }, 
+  "id": "PREDICT_VIRUS", 
+  "name": "predict_virus", 
   "params": {
     "steps": [
       {
-        "id": "build_0_true_d_westnile_stacked",
-        "type": "build_flowitem",
-        "name": "westnile_stacked",
-        "runConditionType": "RUN_IF_STATUS_MATCH",
-        "runConditionStatuses": [
-          "SUCCESS",
-          "WARNING"
-        ],
-        "runConditionExpression": "",
-        "resetScenarioStatus": false,
-        "delayBetweenRetries": 10,
-        "maxRetriesOnFail": 0,
+        "delayBetweenRetries": 10, 
+        "id": "build_0_true_d_westnile_stacked", 
+        "maxRetriesOnFail": 0, 
+        "name": "westnile_stacked", 
         "params": {
           "builds": [
             {
-              "type": "DATASET",
-              "itemId": "westnile_stacked",
-              "partitionsSpec": ""
+              "itemId": "westnile_stacked", 
+              "partitionsSpec": "", 
+              "type": "DATASET"
             }
-          ],
-          "jobType": "RECURSIVE_BUILD",
-          "refreshHiveMetastore": true,
-          "proceedOnFailure": false
-        }
-      },
+          ], 
+          "jobType": "RECURSIVE_BUILD", 
+          "proceedOnFailure": false, 
+          "refreshHiveMetastore": true
+        }, 
+        "resetScenarioStatus": false, 
+        "runConditionExpression": "", 
+        "runConditionStatuses": [
+          "SUCCESS", 
+          "WARNING"
+        ], 
+        "runConditionType": "RUN_IF_STATUS_MATCH", 
+        "type": "build_flowitem"
+      }, 
       {
-        "id": "build_0_true_d_weather_filtered",
-        "type": "build_flowitem",
-        "name": "weather_filtered",
-        "runConditionType": "RUN_IF_STATUS_MATCH",
-        "runConditionStatuses": [
-          "SUCCESS",
-          "WARNING"
-        ],
-        "runConditionExpression": "",
-        "resetScenarioStatus": false,
-        "delayBetweenRetries": 10,
-        "maxRetriesOnFail": 0,
+        "delayBetweenRetries": 10, 
+        "id": "build_0_true_d_weather_filtered", 
+        "maxRetriesOnFail": 0, 
+        "name": "weather_filtered", 
         "params": {
           "builds": [
             {
-              "type": "DATASET",
-              "itemId": "weather_filtered",
-              "partitionsSpec": ""
+              "itemId": "weather_filtered", 
+              "partitionsSpec": "", 
+              "type": "DATASET"
             }
-          ],
-          "jobType": "RECURSIVE_BUILD",
-          "refreshHiveMetastore": true,
-          "proceedOnFailure": false
-        }
-      },
+          ], 
+          "jobType": "RECURSIVE_BUILD", 
+          "proceedOnFailure": false, 
+          "refreshHiveMetastore": true
+        }, 
+        "resetScenarioStatus": false, 
+        "runConditionExpression": "", 
+        "runConditionStatuses": [
+          "SUCCESS", 
+          "WARNING"
+        ], 
+        "runConditionType": "RUN_IF_STATUS_MATCH", 
+        "type": "build_flowitem"
+      }, 
       {
-        "id": "build_0_true_d_westnile_copy_grouped_by_Trap",
-        "type": "build_flowitem",
-        "name": "group_by",
-        "runConditionType": "RUN_IF_STATUS_MATCH",
-        "runConditionStatuses": [
-          "SUCCESS",
-          "WARNING"
-        ],
-        "runConditionExpression": "",
-        "resetScenarioStatus": false,
-        "delayBetweenRetries": 10,
-        "maxRetriesOnFail": 0,
+        "delayBetweenRetries": 10, 
+        "id": "build_0_true_d_westnile_copy_grouped_by_Trap", 
+        "maxRetriesOnFail": 0, 
+        "name": "group_by", 
         "params": {
           "builds": [
             {
-              "type": "DATASET",
-              "itemId": "westnile_copy_grouped_by_Trap",
-              "partitionsSpec": ""
+              "itemId": "westnile_copy_grouped_by_Trap", 
+              "partitionsSpec": "", 
+              "type": "DATASET"
             }
-          ],
-          "jobType": "RECURSIVE_BUILD",
-          "refreshHiveMetastore": true,
-          "proceedOnFailure": false
-        }
-      },
+          ], 
+          "jobType": "RECURSIVE_BUILD", 
+          "proceedOnFailure": false, 
+          "refreshHiveMetastore": true
+        }, 
+        "resetScenarioStatus": false, 
+        "runConditionExpression": "", 
+        "runConditionStatuses": [
+          "SUCCESS", 
+          "WARNING"
+        ], 
+        "runConditionType": "RUN_IF_STATUS_MATCH", 
+        "type": "build_flowitem"
+      }, 
       {
-        "id": "build_0_true_m_jBq0j10r",
-        "type": "build_flowitem",
-        "name": "model",
-        "runConditionType": "RUN_IF_STATUS_MATCH",
-        "runConditionStatuses": [
-          "SUCCESS",
-          "WARNING"
-        ],
-        "runConditionExpression": "",
-        "resetScenarioStatus": false,
-        "delayBetweenRetries": 10,
-        "maxRetriesOnFail": 0,
+        "delayBetweenRetries": 10, 
+        "id": "build_0_true_m_jBq0j10r", 
+        "maxRetriesOnFail": 0, 
+        "name": "model", 
         "params": {
           "builds": [
             {
-              "type": "SAVED_MODEL",
-              "itemId": "jBq0j10r",
-              "partitionsSpec": ""
+              "itemId": "jBq0j10r", 
+              "partitionsSpec": "", 
+              "type": "SAVED_MODEL"
             }
-          ],
-          "jobType": "RECURSIVE_BUILD",
-          "refreshHiveMetastore": true,
-          "proceedOnFailure": false
-        }
-      },
+          ], 
+          "jobType": "RECURSIVE_BUILD", 
+          "proceedOnFailure": false, 
+          "refreshHiveMetastore": true
+        }, 
+        "resetScenarioStatus": false, 
+        "runConditionExpression": "", 
+        "runConditionStatuses": [
+          "SUCCESS", 
+          "WARNING"
+        ], 
+        "runConditionType": "RUN_IF_STATUS_MATCH", 
+        "type": "build_flowitem"
+      }, 
       {
-        "id": "build_0_true_d_unlabelled_scored",
-        "type": "build_flowitem",
-        "name": "unlabelled_scored",
-        "runConditionType": "RUN_IF_STATUS_MATCH",
-        "runConditionStatuses": [
-          "SUCCESS",
-          "WARNING"
-        ],
-        "runConditionExpression": "",
-        "resetScenarioStatus": false,
-        "delayBetweenRetries": 10,
-        "maxRetriesOnFail": 0,
+        "delayBetweenRetries": 10, 
+        "id": "build_0_true_d_unlabelled_scored", 
+        "maxRetriesOnFail": 0, 
+        "name": "unlabelled_scored", 
         "params": {
           "builds": [
             {
-              "type": "DATASET",
-              "itemId": "unlabelled_scored",
-              "partitionsSpec": ""
+              "itemId": "unlabelled_scored", 
+              "partitionsSpec": "", 
+              "type": "DATASET"
             }
-          ],
-          "jobType": "RECURSIVE_BUILD",
-          "refreshHiveMetastore": true,
-          "proceedOnFailure": false
-        }
+          ], 
+          "jobType": "RECURSIVE_BUILD", 
+          "proceedOnFailure": false, 
+          "refreshHiveMetastore": true
+        }, 
+        "resetScenarioStatus": false, 
+        "runConditionExpression": "", 
+        "runConditionStatuses": [
+          "SUCCESS", 
+          "WARNING"
+        ], 
+        "runConditionType": "RUN_IF_STATUS_MATCH", 
+        "type": "build_flowitem"
       }
     ]
-  },
-  "automationLocal": false,
-  "customFields": {}
+  }, 
+  "projectKey": "WESTNILEVIRUSDISCOVERY", 
+  "reporters": [], 
+  "tags": [], 
+  "triggers": [
+    {
+      "active": false, 
+      "delay": 5, 
+      "id": "Vut64dyk", 
+      "name": "daily update", 
+      "params": {
+        "daysOfWeek": [
+          "Saturday"
+        ], 
+        "frequency": "Minutely", 
+        "hour": 2, 
+        "minute": 0, 
+        "monthlyRunOn": "ON_THE_DAY", 
+        "repeatFrequency": 5, 
+        "startingFrom": "2021-03-04T00:00:00.000+0100", 
+        "timezone": "SERVER"
+      }, 
+      "type": "temporal"
+    }, 
+    {
+      "active": false, 
+      "delay": 5, 
+      "id": "FCFThdnq", 
+      "name": "daily update 2", 
+      "params": {
+        "daysOfWeek": [
+          "Saturday"
+        ], 
+        "frequency": "Daily", 
+        "hour": 6, 
+        "minute": 0, 
+        "monthlyRunOn": "ON_THE_DAY", 
+        "repeatFrequency": 1, 
+        "startingFrom": "2021-03-04T00:00:00.000+0100", 
+        "timezone": "SERVER"
+      }, 
+      "type": "temporal"
+    }, 
+    {
+      "active": false, 
+      "delay": 5, 
+      "id": "jNpAs6KM", 
+      "name": "daily update 3", 
+      "params": {
+        "daysOfWeek": [
+          "Saturday"
+        ], 
+        "frequency": "Daily", 
+        "hour": 10, 
+        "minute": 0, 
+        "monthlyRunOn": "ON_THE_DAY", 
+        "repeatFrequency": 1, 
+        "startingFrom": "2021-03-04T00:00:00.000+0100", 
+        "timezone": "SERVER"
+      }, 
+      "type": "temporal"
+    }
+  ], 
+  "type": "step_based", 
+  "versionTag": {
+    "lastModifiedBy": {
+      "login": "admin"
+    }, 
+    "lastModifiedOn": 1605245683983, 
+    "versionNumber": 16
+  }
 }

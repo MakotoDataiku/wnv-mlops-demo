@@ -116,12 +116,36 @@
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
-              "displayMode": "summary"
+              "displayMode": "summary",
+              "advancedOptions": {}
             },
             "autoLoad": true,
             "showTitle": "YES",
             "insightId": "NBfpvJm",
             "insightType": "saved-model_report",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": -1,
+              "left": -1,
+              "width": 2,
+              "height": 2
+            },
+            "clickAction": "OPEN_INSIGHT",
+            "tileParams": {
+              "showXAxis": true,
+              "showYAxis": true,
+              "showLegend": false,
+              "showTooltips": true,
+              "autoPlayAnimation": true
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "I9wXqJw",
+            "insightType": "chart",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
           }
@@ -185,11 +209,11 @@
   "name": "How West Nile Virus scares people out",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 46,
+    "versionNumber": 47,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1604989128766
+    "lastModifiedOn": 1629882604917
   },
   "creationTag": {
     "versionNumber": 0,

@@ -41,6 +41,10 @@
     {
       "objectId": "score_new_data_by_Trap_prepared",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "drift_score",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],

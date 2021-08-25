@@ -86,38 +86,56 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 0,
+              "top": 6,
               "left": 0,
-              "width": 6,
-              "height": 4
-            },
-            "clickAction": "OPEN_INSIGHT",
-            "tileParams": {
-              "showXAxis": true,
-              "showYAxis": true,
-              "showLegend": false,
-              "showTooltips": true,
-              "autoPlayAnimation": true
-            },
-            "autoLoad": true,
-            "showTitle": "YES",
-            "insightId": "mgCNoOL",
-            "insightType": "chart",
-            "displayMode": "INSIGHT",
-            "resizeImageMode": "FIT_SIZE"
-          },
-          {
-            "tileType": "INSIGHT",
-            "box": {
-              "top": 0,
-              "left": 6,
-              "width": 6,
-              "height": 4
+              "width": 12,
+              "height": 5
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
               "displayMode": "summary",
-              "advancedOptions": {}
+              "advancedOptions": {
+                "interactiveScoring": {
+                  "featuresOrder": [
+                    "Longitude_max",
+                    "Sunrise_max",
+                    "Sunset_max",
+                    "Trap",
+                    "Date_parsed_year_max",
+                    "Street_max",
+                    "daylight",
+                    "Latitude_max",
+                    "Day_Number_max",
+                    "Tmin_max",
+                    "Depart_max",
+                    "ResultDir_max",
+                    "WetBulb_max",
+                    "AvgSpeed_max",
+                    "DewPoint_max",
+                    "Block_max",
+                    "Date_parsed_month_max",
+                    "ResultSpeed_max",
+                    "CodeSum_max",
+                    "Cool_max",
+                    "Date_parsed_day_max",
+                    "Tmax_max",
+                    "Tavg_max",
+                    "SeaLevel_max",
+                    "StnPressure_max",
+                    "AddressAccuracy_max",
+                    "Heat_max",
+                    "PrecipTotal_max",
+                    "NumMosquitos_sum",
+                    "GeoPoint_max",
+                    "Date",
+                    "Address_max",
+                    "AddressNumberAndStreet_max",
+                    "count",
+                    "Date_parsed_max",
+                    "WnvPresent_max"
+                  ]
+                }
+              }
             },
             "autoLoad": true,
             "showTitle": "YES",
@@ -129,10 +147,10 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": -1,
-              "left": -1,
-              "width": 2,
-              "height": 2
+              "top": 0,
+              "left": 0,
+              "width": 12,
+              "height": 6
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
@@ -209,11 +227,11 @@
   "name": "How West Nile Virus scares people out",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 48,
+    "versionNumber": 49,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1629882605815
+    "lastModifiedOn": 1629882630612
   },
   "creationTag": {
     "versionNumber": 0,

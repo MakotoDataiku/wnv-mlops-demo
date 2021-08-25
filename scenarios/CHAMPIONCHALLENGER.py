@@ -1,7 +1,7 @@
 import dataiku 
 from dataiku.scenario import Scenario
 
-model_id = "mFwVBlwL" # change this to your model id
+model_id = "jBq0j10r" # change this to your model id
 scenario = Scenario()
 
 def get_active_model_auc():
@@ -24,4 +24,3 @@ new_version_id, new_model_score = get_active_model_auc()
 if new_model_score < past_model_score:
     # if new model performance worse, reactivate previous version
     dataiku.Model(model_id).activate_version(past_version_id)
-

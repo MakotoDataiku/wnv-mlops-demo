@@ -144,7 +144,12 @@
       "exportInsightsData": false,
       "useManualPluginsInfo": false,
       "includedDatasetsData": [],
-      "includedSavedModels": [],
+      "includedSavedModels": [
+        {
+          "id": "jBq0j10r",
+          "name": "Prediction (GBT_CLASSIFICATION) on labelled"
+        }
+      ],
       "includedModelEvaluationStores": [],
       "includedManagedFolders": [],
       "shareAllInputDatasets": false
@@ -320,11 +325,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 32,
+    "versionNumber": 33,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1629879297015
+    "lastModifiedOn": 1629881240626
   },
   "creationTag": {
     "versionNumber": 0,

@@ -1705,11 +1705,7 @@
           "min": 1.0E-23
         },
         "values": [
-          0.01,
-          0.1,
-          1.0,
-          10.0,
-          100.0
+          0.01
         ],
         "range": {
           "min": 0.01,
@@ -1719,7 +1715,7 @@
         }
       },
       "n_jobs": 2,
-      "enabled": false
+      "enabled": true
     },
     "neural_network": {
       "layer_sizes": {
@@ -1755,7 +1751,7 @@
       "nesterovs_momentum": true,
       "shuffle": true,
       "learning_rate_init": 0.001,
-      "enabled": true
+      "enabled": false
     },
     "svc_classifier": {
       "C": {

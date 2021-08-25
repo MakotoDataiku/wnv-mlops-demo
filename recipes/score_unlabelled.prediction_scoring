@@ -15,7 +15,7 @@
   "forceOriginalEngine": true,
   "individualExplanationParams": {
     "subChunkSize": 5000,
-    "method": "SHAPLEY",
+    "method": "ICE",
     "shapleyBackgroundSize": 100,
     "nbExplanations": 3
   },
